@@ -30,8 +30,10 @@ $grey-color-dark:     #1C1C1D;
 $white-color: #ffffff !default;
 $black-color: #000000 !default;
 
+$my-purple-color:     #6610f2 !default;
+$my-light-purple-color:  lighten($my-purple-color, 25%);
 
 // Theme colors
 
-$code-bg-color-light:     rgba($purple-color, 0.05);
+$code-bg-color-light:     rgba($blue-color, 0.05);
 $code-bg-color-dark:      #2c3237 !default;

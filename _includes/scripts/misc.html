@@ -13,3 +13,14 @@ $(function () {$('[data-toggle="tooltip"]').tooltip()})
 
 <!-- Load Common JS -->
 <script src="{{ '/assets/js/common.js' | relative_url }}"></script>
+
+
+<!-- play sounds -->
+<script type="text/javascript"> 
+        function play(audio_id){
+            var audio = document.getElementById(audio_id);
+            audio.play();
+        }
+</script>
+
+

@@ -1,0 +1,175 @@
+---
+---
+<!DOCTYPE html>
+<html>
+
+  <head>
+    {% if page.redirect %}<meta http-equiv="refresh" content="3; url={{ site.baseurl | prepend: site.url }}/" />{% endif %}
+    {% include head.html %}
+  <link rel="stylesheet" href="https://raw.githubusercontent.com/mikepqr/resume.md/main/resume.css">
+  </head>
+
+
+  <body>
+    <!-- Content -->
+
+    <div class="container p-5" style="font-family: palatino">
+      <h3 class="cv"> Keisuke Sakaguchi</h3>
+      <hr style="border-top:solid;color:#888; background:transparent;" />
+
+      <h4 class="cv"> Contact Information </h4>
+      <table class="cv" style="width: 100%;">
+        <tr>
+        <td style="width: 1%" align="left"></td>
+        <td style="width: 60%" align="left">
+          Allen Institute for Artificial Intelligence (AI2)
+        </td>
+        <td style="width: 40%" align="right">
+          Email: <a class="cv" href="mailto:keisukes@allenai.org">keisukes@allenai.org</a>
+        </td>
+        </tr>
+
+        <tr>
+        <td style="width: 1%" align="left"></td>
+        <td style="width: 60%" align="left">
+          2157 N Northlake Way, Suite 110
+        </td>
+        <td style="width: 40%" align="right">
+          GitHub: <a class="cv" href="https://github.com/keisks">https://github.com/keisks</a>
+        </td>
+        </tr>
+
+        <tr>
+        <td style="width: 1%" align="left"></td>
+        <td style="width: 60%" align="left">
+          Seattle, WA, 98103
+        </td>
+        <td style="width: 40%" align="right">
+          <a class="cv" href="https://keisuke-sakaguchi.github.io/">https://keisuke-sakaguchi.github.io/</a>
+        </td>
+        </tr>
+      </table>
+      <br/>
+
+
+      <h4 class="cv"> Professional Experience </h4>
+      <table class="cv" style="width: 100%;">
+        {% for exp in site.data.experience %}
+          <tr>
+          <td style="width: 1%" align="left"></td>
+          <td class="org" style="width: 60%;" align="left">
+            {{ exp.name }}
+          </td>
+          <td style="width: 40%" align="right">
+            {{ exp.address }}
+          </td>
+          </tr>
+          <tr>
+          <td style="width: 1%" align="left"></td>
+          <td class="position" style="width: 60%;" align="left">
+            {{ exp.position }}
+          </td>
+          <td style="width: 40%" align="right">
+            {{ exp.period }}
+          </td>
+          </tr>
+        {% endfor %}
+      </table>
+      <br/>
+
+      <h4 class="cv"> Education </h4>
+      <table class="cv" style="width: 100%;">
+        {% for edu in site.data.education %}
+          <tr>
+          <td style="width: 1%" align="left"></td>
+          <td class="org" style="width: 60%;" align="left">
+            {{ edu.name }}
+          </td>
+          <td style="width: 40%" align="right">
+            {{ edu.address }}
+          </td>
+          </tr>
+          <tr>
+          <td style="width: 1%" align="left"></td>
+          <td class="position" style="width: 70%;" align="left">
+            {{ edu.degree }}
+          </td>
+          <td style="width: 30%" align="right">
+            {{ edu.period }}
+          </td>
+          </tr>
+          <tr>
+          <td style="width: 1%" align="left"></td>
+          <td style="width: 60%" align="left">
+            Advisor(s): {{ edu.advisors }}
+          </td>
+          </tr>
+        {% endfor %}
+      </table>
+      <br/>
+
+
+      <h4 class="cv"> Honors and Awards </h4>
+      <table class="cv" style="width: 100%;">
+        {% for award in site.data.awards %}
+        {% if award.name %}
+          <tr>
+          <td style="width: 1%" align="left"></td>
+          <td style="width: 85%;" align="left">
+            {{ award.name }}
+          </td>
+          <td style="width: 15%" align="right">
+            {{ award.date }}
+          </td>
+          </tr>
+        {% endif %}
+        {% endfor %}
+      </table>
+      <br/>
+
+      <!--
+      <h4 class="cv"> Invited Talks </h4>
+      <table class="cv" style="width: 100%;">
+        {% for talk in site.data.talks %}
+          <tr>
+          <td style="width: 1%" align="left"></td>
+          <td style="width: 85%;" align="left">
+            {{ talk.address }}
+          </td>
+          <td style="width: 15%" align="right">
+            {{ talk.date }}
+          </td>
+          </tr>
+          <tr>
+          <td style="width: 1%" align="left"></td>
+          <td style="width: 60%" align="left">
+            Title: {{ talk.title }}
+          </td>
+          </tr>
+
+        {% endfor %}
+      </table>
+      <br/>
+      -->
+
+
+      <h4 class="cv"> Publications </h4>
+
+      <!-- https://github.com/inukshuk/jekyll-scholar/pull/295-->
+      <div class="publications-cv" style="width: 95%;">
+          {% bibliography -T bib_plain -f papers -q @*[lang=en]* %}
+      </div>
+
+    </div>
+
+  </body>
+
+  {% include scripts/jquery.html %}
+  {% include scripts/bootstrap.html %}
+  {% include scripts/mansory.html %}
+  {% include scripts/misc.html %}
+  {% include scripts/mathjax.html %}
+  {% include scripts/analytics.html %}
+
+</html>
+

@@ -1,0 +1,107 @@
+
+@inproceedings{mita_etal_nlp2021_tetra,
+  title={論述リライトタスクの提案と自動評価の実現に向けて},
+  author={三田,雅人 and 萩原,正人 and 坂口,慶祐 and 水本,智也 and 鈴木,潤 and 乾,健太郎},
+  year={2021},
+  month={{3}},
+  lang={jp},
+  booktitle = "言語処理学会第27回年次大会 ワークショップ「文章の評価と品質推定」",
+  abbr={NLP},
+  cls={misc},
+  review={no},
+}
+
+@inproceedings{mita_etal_yans2020_tetra,
+  title={文法誤り訂正を拡張した新タスクの提案},
+  author={三田,雅人 and 萩原,正人 and 坂口,慶祐 and 水本,智也 and 鈴木,潤 and 乾,健太郎},
+  year={2021},
+  month={{8}},
+  lang={jp},
+  booktitle = "NLP若手の会 第14回シンポジウム",
+  abbr={YANS},
+  cls={misc},
+  review={no},
+}
+
+
+@article{sakaguchi-nagata-2017,
+title="Phrase Structure Annotation and Parsing for Learner English",
+author="Sakaguchi, Keisuke and Nagata, Ryo",
+engname={yes},
+journal="自然言語処理",
+volume="24 (3)",
+pages="491--514",
+year=2017,
+month={{6}},
+abbr={JNLP},
+publisher = {言語処理学会},
+award={言語処理学会 2017年度論文賞},
+awardurl={https://www.anlp.jp/award/ronbun.html},
+lang={jp},
+cls={journal},
+pdf={2017_jnlp_phrase.pdf},
+abstract={Learner English often contains grammatical errors with structural characteristics such as omissions, insertions, substitutions, and word order errors. These errors are not covered by the existing context-free grammar (CFG) rules. Therefore, it is not at all straightforward how to annotate learner English with phrase structures. Because of this limitation, there has been almost no work on phrase structure annotation for learner corpora despite its importance and usefulness. To address this issue, we propose a phrase structure annotation scheme for learner English, that consists of five principles. We apply the annotation scheme to two different learner corpora and show (i) its effectiveness at consistently annotating learner English with phrase struc- ture (i.e., high inter-annotator agreement); (ii) the structural characteristics (CFG rules) of learner English obtained from the annotated corpora; and (iii) phrase struc- ture parsing performance on learner English for the first time. We also release the annotation guidelines, the annotated data, and the parser model to the public.},
+}
+
+
+@inproceedings{mizumoto_etal_nl_2012,
+  title={英作文誤り訂正における複数の手法の利用に関する考察},
+  author={水本,智也 and 林部,祐太 and 坂口,慶祐 and 小町,守 and 松本,裕治},
+  year={2012},
+  month={{9}},
+  lang={jp},
+  booktitle = "情報処理学会第208回自然言語処理研究会",
+  abbr={NL研},
+  pages="1--7",
+  cls={misc},
+  review={no},
+  pdf={2012_nl_gec.pdf},
+  abstract={英語学習者の書く作文には様々な種類の文法誤りが含まれている.文法誤りの中にはヒューリス ティックスを用いたルールで訂正できるものもあれば，長距離の依存関係や選択選好を考慮した統計的な モデルを用いないと訂正が難しいものもある.英語学習者の文法誤りの自動訂正に取り組んだ先行研究で は，訂正する誤りの種類を数種類に限定して取り組んできたが，全ての種類の誤りを対象にした場合，1 つ のモデルだけで十分に対処できるかは未だ分かっていない.そこで，本稿では全ての誤りを対象に，誤り の種類に応じて異なる誤り訂正システムを構築して誤り訂正を行ない，誤り訂正システムの適用の仕方に よる誤り訂正の結果について分析・考察を行なう.},
+}
+
+
+@article{sakaguchi-EtAl:2012:msra,
+  author    = {Sakaguchi, Keisuke and Hayashibe, Yuta and Kondo, Shuhei and Kanashiro, Lis and Mizumoto, Tomoya and Komachi, Mamoru and Matsumoto, Yuji},
+  engname={yes},
+  title     = {Contextual Spelling Correction for Preposition and Determiner Error Correction},
+  journal = {Microsoft Research Asia, Japan CORE Project Workshop},
+  month     = {{6}},
+  year      = {2012},
+  address   = {Tokyo, Japan},
+  review={no},
+  lang={jp},
+  abbr={CORE},
+}
+
+@inproceedings{sakaguchi_etal_nl_2012,
+  title={英語スペリング訂正と品詞タグ付けの結合学習},
+  author={坂口,慶祐 and 水本,智也 and 小町,守 and 松本,裕治},
+  year={2012},
+  month={{5}},
+  lang={jp},
+  booktitle = "情報処理学会第206回自然言語処理研究会",
+  abbr={NL研},
+  cls={misc},
+  pages="1--7",
+  review={no},
+  abstract={近年，外国語学習者が書く作文に対する文法の自動誤り訂正が注目を集めているが，学習者作文の多くは文法的な誤りだけでなくスペリング誤りを多く含んでいる．その結果，学習者作文に対する品詞タグ付けや構文解析の精度が悪化し，誤りの訂正を阻害する大きな要因になっている．またスペリング誤り訂正と品詞タグ付けは従来独立したタスクとして扱われており，スペリング誤り訂正の結果が後続の品詞タグ付けや構文解析に影響する点が指摘されてきたが，近年ではこれまで直列に解析・処理されてきたタスクを統合し，解析の情報を互いに補完しながら同時に処理する結合学習が盛んになっている．そこで本論文では英語学習者コーパスに対してスペリング誤りと品詞タグ付けの結合学習を行いその効果を検討する．実験の結果，結合学習を用いた同時解析の方がそれぞれの解析を単独で行う場合，そしてそれらをパイプラインで処理する場合に比べて解析精度が高くなることを示す．},
+  pdf={2012_nl_joint.pdf},
+}
+
+@inproceedings{mizumoto_etal_nlp_2011,
+  title={オークション検索クリックスルーログからの属性値抽出},
+  author={水本,智也 and 坂口,慶祐 and 小町,守 and 内海,慶 and 河野,洋志 and 前澤,敏之 and 佐藤,敏紀},
+  year={2011},
+  month={{3}},
+  lang={jp},
+  booktitle = "言語処理学会第18回年次大会論文集",
+  pages="1023--1026",
+  abbr={NL研},
+  cls={misc},
+  review={no},
+  pdf={2011_nlp_auction.pdf},
+}
+
+
+
+

@@ -1,72 +1,738 @@
 ---
 ---
 
-@string{aps = {American Physical Society,}}
 
-@book{einstein1956investigations,
-  bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation,}
+@inproceedings{Tandon2021InterscriptAD,
+  title={Interscript: A dataset for interactive learning of scripts through error feedback},
+  author={Niket Tandon and Aman Madaan and Peter Clark and Keisuke Sakaguchi and Yiming Yang},
+  year={2022},
+  lang={en},
+  booktitle = "The AAAI-22 Workshop on Interactive Machine Learning",
+  abbr={IMLW@AAAI},
+  abstract={How can an end-user provide feedback if a deployed structured prediction model generates inconsistent output, ignoring the structural complexity of human language? This is an emerging topic with recent progress in synthetic or constrained settings, and the next big leap would require testing and tuning models in real-world settings. We present a new dataset, INTERSCRIPT, containing user feedback on a deployed model that generates complex everyday tasks. INTERSCRIPT contains 8,466 data points– the input is a possibly erroneous script and a user feedback and the output is a modified script. We posit two use-cases of INTERSCRIPT that might significantly advance the state-of-the-art in interactive.},
+  pdf={2022_imlw_interscript.pdf},
+  project={https://github.com/allenai/interscript},
+  cls={workshop},
 }
 
-@article{einstein1950meaning,
-  abbr={AJP},
-  bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics,},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers,}
+
+@article{Kasai2021BidimensionalLG,
+  title={Bidimensional Leaderboards: Generate and Evaluate Language Hand in Hand},
+  author={Jungo Kasai and Keisuke Sakaguchi and Ronan Le Bras and Lavinia Dunagan and Jacob Morrison and Alexander R. Fabbri and Yejin Choi and Noah A. Smith},
+  journal={arXiv},
+  year={2021},
+  volume={abs/2112.04189},
+  lang={en},
+  abbr={arXiv},
+  pdf={2021_arxiv_billboards.pdf},
+  review={no},
+  project={https://nlp.cs.washington.edu/billboard/},
+  abstract={Natural language processing researchers have identified limitations of evaluation methodology for generation tasks, with new questions raised about the validity of automatic metrics and of crowdworker judgments. Meanwhile, efforts to improve generation models tend to focus on simple n-gram overlap metrics (e.g., BLEU, ROUGE). We argue that new advances on models and metrics should each more directly benefit and inform the other. We therefore propose a generalization of leaderboards, bidimensional leaderboards (BILLBOARDs), that simultaneously tracks progress in language generation tasks and metrics for their evaluation. Unlike conventional unidimensional leaderboards that sort submitted systems by predetermined metrics, a BILLBOARD accepts both generators and evaluation metrics as competing entries. A BILLBOARD automatically creates an ensemble metric that selects and linearly combines a few metrics based on a global analysis across generators. Further, metrics are ranked based on their correlations with human judgments. We release four BILLBOARDs for machine translation, summarization, and image captioning. We demonstrate that a linear ensemble of a few diverse metrics sometimes substantially outperforms existing metrics in isolation. Our mixed-effects model analysis shows that most automatic metrics, especially the reference-based ones, overrate machine over human generation, demonstrating the importance of updating metrics as generation models become stronger (and perhaps more similar to humans) in the future.},
+  cls={preprint},
 }
 
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein, A. and Podolsky, B. and Rosen, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.,},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  selected={true}
+@article{Kasai2021TransparentHE,
+  title={Transparent Human Evaluation for Image Captioning},
+  author={Jungo Kasai and Keisuke Sakaguchi and Lavinia Dunagan and Jacob Morrison and Ronan Le Bras and Yejin Choi and Noah A. Smith},
+  journal={arXiv},
+  year={2021},
+  volume={abs/2111.08940},
+  lang={en},
+  abbr={arXiv},
+  review={no},
+  pdf={2021_arxiv_thumb.pdf},
+  abstract={We establish a rubric-based human evaluation protocol for image captioning models. Our scoring rubrics and their definitions are carefully developed based on machineand humangenerated captions on the MSCOCO dataset. Each caption is evaluated along two main dimensions in a tradeoff (precision and recall) as well as other aspects that measure the text quality (fluency, conciseness, and inclusive language). Our evaluations demonstrate several critical problems of the current evaluation practice. Human-generated captions show substantially higher quality than machine-generated ones, especially in coverage of salient information (i.e., recall), while all automatic metrics say the opposite. Our rubric-based results reveal that CLIPScore, a recent metric that uses image features, better correlates with human judgments than conventional text-only metrics because it is more sensitive to recall. We hope that this work will promote a more transparent evaluation protocol for image captioning and its automatic metrics.},
+  project={https://github.com/jungokasai/THumB},
+  cls={preprint},
 }
 
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik,},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
+
+@article{Madaan2021ImprovingNM,
+  title={Improving Neural Model Performance through Natural Language Feedback on Their Explanations},
+  author={Aman Madaan and Niket Tandon and Dheeraj Rajagopal and Yiming Yang and Peter Clark and Keisuke Sakaguchi and Eduard H. Hovy},
+  journal={arXiv},
+  year={2021},
+  lang={en},
+  review={no},
+  volume={abs/2104.08765},
+  abbr={arXiv},
+  pdf={2021_arxiv_mercurie.pdf},
+  abstract={A class of explainable NLP models for reasoning tasks support their decisions by generating free-form or structured explanations, but what happens when these supporting structures contain errors? Our goal is to allow users to interactively correct explanation structures through natural language feedback. We introduce MERCURIEan interactive system that refines its explanations for a given reasoning task by getting human feedback in natural language. Our approach generates graphs that have 40% fewer inconsistencies as compared with the off-the-shelf system. Further, simply appending the corrected explanation structures to the output leads to a gain of 1.2 points on accuracy on defeasible reasoning across all three domains.},
+  cls={preprint},
 }
 
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.,},
-  volume={17},
-  pages={549--560},
-  year={1905}
+
+@article{Hagiwara2021GrammarTaggerAM,
+  title={GrammarTagger: A Multilingual, Minimally-Supervised Grammar Profiler for Language Education},
+  author={Masato Hagiwara and Joshua Tanner and Keisuke Sakaguchi},
+  journal={arXiv},
+  year={2021},
+  volume={abs/2104.03190},
+  lang={en},
+  review={no},
+  abbr={arXiv},
+  pdf={2021_arxiv_grammar_tagger.pdf},
+  project={https://github.com/octanove/grammartagger},
+  abstract={We present GrammarTagger, an open-source grammar profiler which, given an input text, identifies grammatical features useful for language education. The model architecture enables it to learn from a small amount of texts annotated with spans and their labels, which 1) enables easier and more intuitive annotation, 2) supports overlapping spans, and 3) is less prone to error propagation, compared to complex hand-crafted rules defined on constituency/dependency parses. We show that we can bootstrap a grammar profiler model with F1 ≈ 0.6 from only a couple hundred sentences both in English and Chinese, which can be further boosted via learning a multilingual model. With GrammarTagger, we also build Octanove Learn, a search engine of language learning materials indexed by their reading difficulty and grammatical features.},
+  cls={preprint},
 }
 
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
+@inproceedings{sakaguchi-etal-2021-proscript-partially,
+    title = "pro{S}cript: Partially Ordered Scripts Generation",
+    author = "Sakaguchi, Keisuke  and
+      Bhagavatula, Chandra  and
+      Le Bras, Ronan  and
+      Tandon, Niket  and
+      Clark, Peter  and
+      Choi, Yejin",
+    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2021",
+    month = nov,
+    year = "2021",
+    address = "Punta Cana, Dominican Republic",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.findings-emnlp.184",
+    pages = "2138--2149",
+    abstract = "Scripts {--} prototypical event sequences describing everyday activities {--} have been shown to help understand narratives by providing expectations, resolving ambiguity, and filling in unstated information. However, to date they have proved hard to author or extract from text. In this work, we demonstrate for the first time that pre-trained neural language models can be finetuned to generate high-quality scripts, at varying levels of granularity, for a wide range of everyday scenarios (e.g., bake a cake). To do this, we collect a large (6.4k) crowdsourced partially ordered scripts (named proScript), that is substantially larger than prior datasets, and develop models that generate scripts by combining language generation and graph structure prediction. We define two complementary tasks: (i) edge prediction: given a scenario and unordered events, organize the events into a valid (possibly partial-order) script, and (ii) script generation: given only a scenario, generate events and organize them into a (possibly partial-order) script. Our experiments show that our models perform well (e.g., F1=75.7 on task (i)), illustrating a new approach to overcoming previous barriers to script collection. We also show that there is still significant room for improvement toward human level performance. Together, our tasks, dataset, and models offer a new research direction for learning script knowledge.",
+    lang={en},
+    abbr={EMNLP Findings},
+    pdf={2021_emnlp_proscript.pdf},
+    project={https://proscript.allenai.org/},
+  cls={conf},
 }
+
+@article{10.1145/3474381,
+author = {Sakaguchi, Keisuke and Bras, Ronan Le and Bhagavatula, Chandra and Choi, Yejin},
+title = {WinoGrande: An Adversarial Winograd Schema Challenge at Scale},
+year = {2021},
+issue_date = {September 2021},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {64},
+number = {9},
+issn = {0001-0782},
+url = {https://doi.org/10.1145/3474381},
+doi = {10.1145/3474381},
+abstract = {Commonsense reasoning remains a major challenge in AI, and yet, recent progresses on benchmarks may seem to suggest otherwise. In particular, the recent neural language models have reported above 90% accuracy on the Winograd Schema Challenge (WSC), a commonsense benchmark originally designed to be unsolvable for statistical models that rely simply on word associations. This raises an important question---whether these models have truly acquired robust commonsense capabilities or they rely on spurious biases in the dataset that lead to an overestimation of the true capabilities of machine commonsense.To investigate this question, we introduce WinoGrande, a large-scale dataset of 44k problems, inspired by the original WSC, but adjusted to improve both the scale and the hardness of the dataset. The key steps of the dataset construction consist of (1) large-scale crowdsourcing, followed by (2) systematic bias reduction using a novel AFLITE algorithm that generalizes human-detectable word associations to machine-detectable embedding associations. Our experiments demonstrate that state-of-the-art models achieve considerably lower accuracy (59.4%-79.1%) on WINOGRANDE compared to humans (94%), confirming that the high performance on the original WSC was inflated by spurious biases in the dataset.Furthermore, we report new state-of-the-art results on five related benchmarks with emphasis on their dual implications. On the one hand, they demonstrate the effectiveness of WINOGRANDE when used as a resource for transfer learning. On the other hand, the high performance on all these benchmarks suggests the extent to which spurious biases are prevalent in all such datasets, which motivates further research on algorithmic bias reduction.},
+journal = {Commun. ACM},
+month = {aug},
+pages = {99–106},
+numpages = {8},
+lang = {en},
+abbr = {CACM},
+pdf = {https://cacm.acm.org/magazines/2021/9/255048-winogrande/fulltext},
+  cls={journal},
+}
+
+@article{Hwang2021COMETATOMIC2O,
+  title={COMET-ATOMIC 2020: On Symbolic and Neural Commonsense Knowledge Graphs},
+  author={Jena D. Hwang and Chandra Bhagavatula and Ronan Le Bras and Jeff Da and Keisuke Sakaguchi and Antoine Bosselut and Yejin Choi},
+  journal={Proceedings of the AAAI Conference on Artificial Intelligence}, author={Hwang, Jena D. and Bhagavatula, Chandra and Le Bras, Ronan and Da, Jeff and Sakaguchi, Keisuke and Bosselut, Antoine and Choi, Yejin}, 
+  volume={35}, 
+  number={7}, 
+ year={2021},
+  month={May}, 
+  pages={6384-6392},
+  lang={en},
+  abbr={AAAI},
+  project={https://github.com/allenai/comet-atomic-2020},
+  pdf={2021_aaai_comet2020.pdf},
+  abstract={Recent years have brought about a renewed interest in commonsense representation and reasoning in the field of natural language understanding. The development of new commonsense knowledge graphs (CSKG) has been central to these advances as their diverse facts can be used and referenced by machine learning models for tackling new and challenging tasks. At the same time, there remain questions about the quality and coverage of these resources due to the massive scale required to comprehensively encompass general commonsense knowledge.
+In this work, we posit that manually constructed CSKGs will never achieve the coverage necessary to be applicable in all situations encountered by NLP agents. Therefore, we propose a new evaluation framework for testing the utility of KGs based on how effectively implicit knowledge representations can be learned from them.
+With this new goal, we propose ATOMIC 2020, a new CSKG of general-purpose commonsense knowledge containing knowledge that is not readily available in pretrained language models. We evaluate its properties in comparison with other leading CSKGs, performing the first large-scale pairwise study of commonsense knowledge resources. Next, we show that ATOMIC 2020 is better suited for training knowledge models that can generate accurate, representative knowledge for new, unseen entities and events. Finally, through human evaluation, we show that the few-shot performance of GPT-3 (175B parameters), while impressive, remains ~12 absolute points lower than a BART-based knowledge model trained on ATOMIC 2020 despite using over 430x fewer parameters.},
+  cls={conf},
+}
+
+
+
+@inproceedings{tandon-etal-2020-dataset,
+    title = "A Dataset for Tracking Entities in Open Domain Procedural Text",
+    author = "Tandon, Niket  and
+      Sakaguchi, Keisuke  and
+      Dalvi, Bhavana  and
+      Rajagopal, Dheeraj  and
+      Clark, Peter  and
+      Guerquin, Michal  and
+      Richardson, Kyle  and
+      Hovy, Eduard",
+    booktitle = "Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)",
+    month = nov,
+    year = "2020",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2020.emnlp-main.520",
+    doi = "10.18653/v1/2020.emnlp-main.520",
+    pages = "6408--6417",
+    abstract = "We present the first dataset for tracking state changes in procedural text from arbitrary domains by using an unrestricted (open) vocabulary. For example, in a text describing fog removal using potatoes, a car window may transition between being foggy, sticky, opaque, and clear. Previous formulations of this task provide the text and entities involved, and ask how those entities change for just a small, pre-defined set of attributes (e.g., location), limiting their fidelity. Our solution is a new task formulation where given just a procedural text as input, the task is to generate a set of state change tuples (entity, attribute, before-state, after-state) for each step, where the entity, attribute, and state values must be predicted from an open vocabulary. Using crowdsourcing, we create OPENPI, a high-quality (91.5{\%} coverage as judged by humans and completely vetted), and large-scale dataset comprising 29,928 state changes over 4,050 sentences from 810 procedural real-world paragraphs from WikiHow.com. A current state-of-the-art generation model on this task achieves 16.1{\%} F1 based on BLEU metric, leaving enough room for novel model architectures.",
+    lang={en},
+    abbr={EMNLP},
+    project={https://allenai.org/data/openpi},
+    pdf={2020_emnlp_openpi.pdf},
+  cls={conf},
+}
+
+@inproceedings{chen-etal-2020-uncertain,
+    title = "Uncertain Natural Language Inference",
+    author = "Chen, Tongfei  and
+      Jiang, Zhengping  and
+      Poliak, Adam  and
+      Sakaguchi, Keisuke  and
+      Van Durme, Benjamin",
+    booktitle = "Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics",
+    month = jul,
+    year = "2020",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2020.acl-main.774",
+    doi = "10.18653/v1/2020.acl-main.774",
+    pages = "8772--8779",
+    abstract = "We introduce Uncertain Natural Language Inference (UNLI), a refinement of Natural Language Inference (NLI) that shifts away from categorical labels, targeting instead the direct prediction of subjective probability assessments. We demonstrate the feasibility of collecting annotations for UNLI by relabeling a portion of the SNLI dataset under a probabilistic scale, where items even with the same categorical label differ in how likely people judge them to be true given a premise. We describe a direct scalar regression modeling approach, and find that existing categorically-labeled NLI data can be used in pre-training. Our best models correlate well with humans, demonstrating models are capable of more subtle inferences than the categorical bin assignment employed in current NLI tasks.",
+    lang={en},
+    abbr={ACL},
+    project={https://nlp.jhu.edu/unli/},
+    pdf={2020_acl_unli.pdf},
+  cls={conf},
+}
+
+@inproceedings{white-etal-2020-universal,
+    title = "The Universal Decompositional Semantics Dataset and Decomp Toolkit",
+    author = "White, Aaron Steven  and
+      Stengel-Eskin, Elias  and
+      Vashishtha, Siddharth  and
+      Govindarajan, Venkata Subrahmanyan  and
+      Reisinger, Dee Ann  and
+      Vieira, Tim  and
+      Sakaguchi, Keisuke  and
+      Zhang, Sheng  and
+      Ferraro, Francis  and
+      Rudinger, Rachel  and
+      Rawlins, Kyle  and
+      Van Durme, Benjamin",
+    booktitle = "Proceedings of the 12th Language Resources and Evaluation Conference",
+    month = may,
+    year = "2020",
+    address = "Marseille, France",
+    publisher = "European Language Resources Association",
+    url = "https://aclanthology.org/2020.lrec-1.699",
+    pages = "5698--5707",
+    abstract = "We present the Universal Decompositional Semantics (UDS) dataset (v1.0), which is bundled with the Decomp toolkit (v0.1). UDS1.0 unifies five high-quality, decompositional semantics-aligned annotation sets within a single semantic graph specification{---}with graph structures defined by the predicative patterns produced by the PredPatt tool and real-valued node and edge attributes constructed using sophisticated normalization procedures. The Decomp toolkit provides a suite of Python 3 tools for querying UDS graphs using SPARQL. Both UDS1.0 and Decomp0.1 are publicly available at http://decomp.io.",
+    language = "English",
+    ISBN = "979-10-95546-34-4",
+    lang={en},
+    abbr={LREC},
+    project={https://decomp.io/},
+    pdf={2020_lrec_decomp.pdf},
+  cls={conf},
+}
+
+
+@inproceedings{bhagavatula2020abductive,
+  title={Abductive Commonsense Reasoning},
+  author={Chandra Bhagavatula and Ronan Le Bras and Chaitanya Malaviya and Keisuke Sakaguchi and Ari Holtzman and Hannah Rashkin and Doug Downey and Wen-tau Yih and Yejin Choi},
+  booktitle={International Conference on Learning Representations},
+  year={2020},
+  url={https://openreview.net/forum?id=Byg1v1HKDB},
+  lang={en},
+  abbr={ICLR},
+  pdf={2020_iclr_anli.pdf},
+  project={https://github.com/allenai/abductive-commonsense-reasoning},
+  cls={conf},
+}
+
+@article{Sakaguchi-etal-2020-winogrande,
+        title={WinoGrande: An Adversarial Winograd Schema Challenge at Scale}, 
+        volume={34}, 
+        url={https://ojs.aaai.org/index.php/AAAI/article/view/6399}, 
+        DOI={10.1609/aaai.v34i05.6399}, 
+        abstract={The Winograd Schema Challenge (WSC) (Levesque, Davis, and Morgenstern 2011), a benchmark for commonsense reasoning, is a set of 273 expert-crafted pronoun resolution problems originally designed to be unsolvable for statistical models that rely on selectional preferences or word associations. However, recent advances in neural language models have already reached around 90% accuracy on variants of WSC. This raises an important question whether these models have truly acquired robust commonsense capabilities or whether they rely on spurious biases in the datasets that lead to an overestimation of the true capabilities of machine commonsense. To investigate this question, we introduce WinoGrande, a large-scale dataset of 44k problems, inspired by the original WSC design, but adjusted to improve both the scale and the hardness of the dataset. The key steps of the dataset construction consist of (1) a carefully designed crowdsourcing procedure, followed by (2) systematic bias reduction using a novel AfLite algorithm that generalizes human-detectable word associations to machine-detectable embedding associations. The best state-of-the-art methods on WinoGrande achieve 59.4 – 79.1%, which are ∼15-35% (absolute) below human performance of 94.0%, depending on the amount of the training data allowed (2% – 100% respectively). Furthermore, we establish new state-of-the-art results on five related benchmarks — WSC (→ 90.1%), DPR (→ 93.1%), COPA(→ 90.6%), KnowRef (→ 85.6%), and Winogender (→ 97.1%). These results have dual implications: on one hand, they demonstrate the effectiveness of WinoGrande when used as a resource for transfer learning. On the other hand, they raise a concern that we are likely to be overestimating the true capabilities of machine commonsense across all these benchmarks. We emphasize the importance of algorithmic bias reduction in existing and future benchmarks to mitigate such overestimation.},
+        number={05}, 
+        journal={Proceedings of the AAAI Conference on Artificial Intelligence}, 
+        author={Sakaguchi, Keisuke and Le Bras, Ronan and Bhagavatula, Chandra and Choi, Yejin}, 
+        year={2020}, 
+        month={Apr.}, 
+        pages={8732-8740},
+        lang={en},
+        abbr={AAAI},
+        award={Outstanding Paper Award (Single Best Paper)},
+        awardurl={https://aaai.org/Awards/paper.php},
+        pdf={2020_aaai_winogrande.pdf},
+        project={https://winogrande.allenai.org/},
+        media1={MIT Technology Review},
+        media1url={https://www.technologyreview.com/2020/01/31/304844/ai-common-sense-reads-human-language-ai2/},
+        media2={Import AI},
+        media2url={https://jack-clark.net/2019/07/29/import-ai-157-how-weather-can-break-self-driving-car-ai-modelling-traffic-via-deep-learning-and-satellites-and-chinese-scientists-make-a-smarter-smaller-yolov3/},
+        media3={Forbes},
+        media3url={https://www.forbes.com/sites/gilpress/2020/01/29/7-observations-about-ai-in-2019/?sh=e3a68c419063},
+  cls={conf},
+}
+
+
+@inproceedings{tandon-etal-2019-wiqa,
+    title = "{WIQA}: A dataset for {``}What if...{''} reasoning over procedural text",
+    author = "Tandon, Niket  and
+      Dalvi, Bhavana  and
+      Sakaguchi, Keisuke  and
+      Clark, Peter  and
+      Bosselut, Antoine",
+    booktitle = "Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)",
+    month = nov,
+    year = "2019",
+    address = "Hong Kong, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/D19-1629",
+    doi = "10.18653/v1/D19-1629",
+    pages = "6076--6085",
+    abstract = "We introduce WIQA, the first large-scale dataset of {``}What if...{''} questions over procedural text. WIQA contains a collection of paragraphs, each annotated with multiple influence graphs describing how one change affects another, and a large (40k) collection of {``}What if...?{''} multiple-choice questions derived from these. For example, given a paragraph about beach erosion, would stormy weather hasten or decelerate erosion? WIQA contains three kinds of questions: perturbations to steps mentioned in the paragraph; external (out-of-paragraph) perturbations requiring commonsense knowledge; and irrelevant (no effect) perturbations. We find that state-of-the-art models achieve 73.8{\%} accuracy, well below the human performance of 96.3{\%}. We analyze the challenges, in particular tracking chains of influences, and present the dataset as an open challenge to the community.",
+    lang={en},
+    abbr={EMNLP},
+    project={https://allenai.org/data/wiqa},
+    pdf={2019_emnlp_wiqa.pdf},
+  cls={conf},
+}
+
+@inproceedings{sakaguchi-van-durme-2018-efficient,
+    title = "Efficient Online Scalar Annotation with Bounded Support",
+    author = "Sakaguchi, Keisuke  and
+      Van Durme, Benjamin",
+    booktitle = "Proceedings of the 56th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2018",
+    address = "Melbourne, Australia",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/P18-1020",
+    doi = "10.18653/v1/P18-1020",
+    pages = "208--218",
+    abstract = "We describe a novel method for efficiently eliciting scalar annotations for dataset construction and system quality estimation by human judgments. We contrast direct assessment (annotators assign scores to items directly), online pairwise ranking aggregation (scores derive from annotator comparison of items), and a hybrid approach (EASL: Efficient Annotation of Scalar Labels) proposed here. Our proposal leads to increased correlation with ground truth, at far greater annotator efficiency, suggesting this strategy as an improved mechanism for dataset creation and manual system evaluation.",
+    lang={en},
+    abbr={ACL},
+    project={https://github.com/decomp-sem/EASL},
+    slides={https://www.slideshare.net/keisks/acl18-sakaguchi},
+    pdf={2018_acl_easl.pdf},
+  cls={conf},
+}
+
+
+@inproceedings{sakaguchi-etal-2017-grammatical,
+    title = "Grammatical Error Correction with Neural Reinforcement Learning",
+    author = "Sakaguchi, Keisuke  and
+      Post, Matt  and
+      Van Durme, Benjamin",
+    booktitle = "Proceedings of the Eighth International Joint Conference on Natural Language Processing (Volume 2: Short Papers)",
+    month = nov,
+    year = "2017",
+    address = "Taipei, Taiwan",
+    publisher = "Asian Federation of Natural Language Processing",
+    url = "https://aclanthology.org/I17-2062",
+    pages = "366--372",
+    abstract = "We propose a neural encoder-decoder model with reinforcement learning (NRL) for grammatical error correction (GEC). Unlike conventional maximum likelihood estimation (MLE), the model directly optimizes towards an objective that considers a sentence-level, task-specific evaluation metric, avoiding the exposure bias issue in MLE. We demonstrate that NRL outperforms MLE both in human and automated evaluation metrics, achieving the state-of-the-art on a fluency-oriented GEC corpus.",
+    lang={en},
+    abbr={IJCNLP},
+    pdf={2017_ijcnlp_neural_rl.pdf},
+    project={https://github.com/keisks/nematus/tree/nrl-gleu},
+    slides={https://www.slideshare.net/keisks/ijcnlp17-sakaguchi},
+  cls={conf},
+}
+
+@inproceedings{sakaguchi-etal-2017-gec,
+    title = "{GEC} into the future: Where are we going and how do we get there?",
+    author = "Sakaguchi, Keisuke  and
+      Napoles, Courtney  and
+      Tetreault, Joel",
+    booktitle = "Proceedings of the 12th Workshop on Innovative Use of {NLP} for Building Educational Applications",
+    month = sep,
+    year = "2017",
+    address = "Copenhagen, Denmark",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/W17-5019",
+    doi = "10.18653/v1/W17-5019",
+    pages = "180--187",
+    abstract = "The field of grammatical error correction (GEC) has made tremendous bounds in the last ten years, but new questions and obstacles are revealing themselves. In this position paper, we discuss the issues that need to be addressed and provide recommendations for the field to continue to make progress, and propose a new shared task. We invite suggestions and critiques from the audience to make the new shared task a community-driven venture.",
+    lang={en},
+    pdf={2017_bea_gec_future.pdf},
+    abbr={BEA@EMNLP},
+  cls={workshop},
+}
+
+@inproceedings{sakaguchi-etal-2017-error,
+    title = "Error-repair Dependency Parsing for Ungrammatical Texts",
+    author = "Sakaguchi, Keisuke  and
+      Post, Matt  and
+      Van Durme, Benjamin",
+    booktitle = "Proceedings of the 55th Annual Meeting of the Association for Computational Linguistics (Volume 2: Short Papers)",
+    month = jul,
+    year = "2017",
+    address = "Vancouver, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/P17-2030",
+    doi = "10.18653/v1/P17-2030",
+    pages = "189--195",
+    abstract = "We propose a new dependency parsing scheme which jointly parses a sentence and repairs grammatical errors by extending the non-directional transition-based formalism of Goldberg and Elhadad (2010) with three additional actions: SUBSTITUTE, DELETE, INSERT. Because these actions may cause an infinite loop in derivation, we also introduce simple constraints that ensure the parser termination. We evaluate our model with respect to dependency accuracy and grammaticality improvements for ungrammatical sentences, demonstrating the robustness and applicability of our scheme.",
+    lang={en},
+    abbr={ACL},
+    project={https://github.com/keisks/error-repair-parsing},
+    pdf={2017_acl_error_repair.pdf},
+    slides={https://www.slideshare.net/keisks/201707-acl},
+    award={Outstanding Paper Award (1.5% of the submissions)},
+    awardurl={https://acl2017.wordpress.com/2017/08/03/outstanding-and-best-papers-and-the-decision-process/},
+  cls={conf},
+}
+
+@inproceedings{napoles-etal-2017-jfleg,
+    title = "{JFLEG}: A Fluency Corpus and Benchmark for Grammatical Error Correction",
+    author = "Napoles, Courtney  and
+      Sakaguchi, Keisuke  and
+      Tetreault, Joel",
+    booktitle = "Proceedings of the 15th Conference of the {E}uropean Chapter of the Association for Computational Linguistics: Volume 2, Short Papers",
+    month = apr,
+    year = "2017",
+    address = "Valencia, Spain",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/E17-2037",
+    pages = "229--234",
+    abstract = "We present a new parallel corpus, JHU FLuency-Extended GUG corpus (JFLEG) for developing and evaluating grammatical error correction (GEC). Unlike other corpora, it represents a broad range of language proficiency levels and uses holistic fluency edits to not only correct grammatical errors but also make the original text more native sounding. We describe the types of corrections made and benchmark four leading GEC systems on this corpus, identifying specific areas in which they do well and how they can improve. JFLEG fulfills the need for a new gold standard to properly assess the current state of GEC.",
+    lang={en},
+    abbr={EACL},
+    project={https://github.com/keisks/jfleg},
+    pdf={2017_eacl_jfleg.pdf},
+    media1={Grammarly blog},
+    media1url={https://www.grammarly.com/blog/engineering/paving-the-way-for-human-level-sentence-corrections/},
+  cls={conf},
+}
+
+@inproceedings{10.5555/3298023.3298045,
+author = {Sakaguchi, Keisuke and Duh, Kevin and Post, Matt and Durme, Benjamin Van},
+title = {Robsut Wrod Reocginiton via Semi-Character Recurrent Neural Network},
+year = {2017},
+publisher = {AAAI Press},
+abstract = {Language processing mechanism by humans is generally more robust than computers. The Cmabrigde Uinervtisy (Cambridge University) effect from the psycholinguistics literature has demonstrated such a robust word processing mechanism, where jumbled words (e.g. Cmabrigde / Cambridge) are recognized with little cost. On the other hand, computational models for word recognition (e.g. spelling checkers) perform poorly on data with such noise.Inspired by the findings from the Cmabrigde Uinervtisy effect, we propose a word recognition model based on a semi-character level recurrent neural network (scRNN). In our experiments, we demonstrate that scRNN has significantly more robust performance in word spelling correction (i.e. word recognition) compared to existing spelling checkers and character-based convolutional neural network. Furthermore, we demonstrate that the model is cognitively plausible by replicating a psycholinguistics experiment about human reading difficulty using our model.},
+booktitle = {Proceedings of the Thirty-First AAAI Conference on Artificial Intelligence},
+pages = {3281–3287},
+numpages = {7},
+location = {San Francisco, California, USA},
+series = {AAAI'17},
+lang={en},
+abbr={AAAI},
+project={https://github.com/keisks/robsut-wrod-reocginiton},
+pdf={2017_aaai_robsut.pdf},
+poster={2017_aaai_robsut_poster.pdf},
+  cls={conf},
+}
+
+
+@inproceedings{white-etal-2016-universal,
+    title = "Universal Decompositional Semantics on {U}niversal {D}ependencies",
+    author = "White, Aaron Steven  and
+      Reisinger, Drew  and
+      Sakaguchi, Keisuke  and
+      Vieira, Tim  and
+      Zhang, Sheng  and
+      Rudinger, Rachel  and
+      Rawlins, Kyle  and
+      Van Durme, Benjamin",
+    booktitle = "Proceedings of the 2016 Conference on Empirical Methods in Natural Language Processing",
+    month = nov,
+    year = "2016",
+    address = "Austin, Texas",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/D16-1177",
+    doi = "10.18653/v1/D16-1177",
+    pages = "1713--1723",
+    lang={en},
+    abbr={EMNLP},
+    pdf={2016_emnlp_decomp.pdf},
+    abstract={We present a framework for augmenting data sets from the Universal Dependencies project with Universal Decompositional Semantics. Where the Universal Dependencies project aims to provide a syntactic annotation standard that can be used consistently across many languages as well as a collection of corpora that use that standard, our extension has similar aims for semantic annotation. We describe results from annotating the English Universal Dependencies treebank, dealing with word senses, semantic roles, and event properties.},
+    project={https://decomp.io/},
+  cls={conf},
+}
+
+@inproceedings{napoles-etal-2016-theres,
+    title = "There{'}s No Comparison: Reference-less Evaluation Metrics in Grammatical Error Correction",
+    author = "Napoles, Courtney  and
+      Sakaguchi, Keisuke  and
+      Tetreault, Joel",
+    booktitle = "Proceedings of the 2016 Conference on Empirical Methods in Natural Language Processing",
+    month = nov,
+    year = "2016",
+    address = "Austin, Texas",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/D16-1228",
+    doi = "10.18653/v1/D16-1228",
+    pages = "2109--2115",
+    lang={en},
+    abbr={EMNLP},
+    pdf={2016_emnlp_no_comparison.pdf},
+    abstract={Current methods for automatically evaluating grammatical error correction (GEC) systems rely on gold-standard references. However, these methods suffer from penalizing grammatical edits that are correct but not in the gold standard. We show that reference-less grammaticality metrics correlate very strongly with human judgments and are competitive with the leading reference-based evaluation metrics. By interpolating both methods, we achieve state-of-the-art correlation with human judgments. Finally, we show that GEC metrics are much more reliable when they are calculated at the sentence level instead of the corpus level. We have set up a CodaLab site for benchmarking GEC output using a common dataset and different evaluation metrics.},
+    project={https://github.com/cnap/grammaticality-metrics},
+  cls={conf},
+
+}
+
+@inproceedings{nagata-sakaguchi-2016-phrase,
+    title = "Phrase Structure Annotation and Parsing for Learner {E}nglish",
+    author = "Nagata, Ryo  and
+      Sakaguchi, Keisuke",
+    booktitle = "Proceedings of the 54th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = aug,
+    year = "2016",
+    address = "Berlin, Germany",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/P16-1173",
+    doi = "10.18653/v1/P16-1173",
+    pages = "1837--1847",
+    lang={en},
+    abbr={ACL},
+    pdf={2016_acl_phrase_structure_annotation.pdf},
+    abstract={There has been almost no work on phrase structure annotation and parsing specially designed for learner English despite the fact that they are useful for representing the structural characteristics of learner English. To address this problem, in this paper, we first propose a phrase structure annotation scheme for learner English and annotate two different learner corpora using it. Second, we show their usefulness, reporting on (a) inter-annotator agreement rate, (b) characteristic CFG rules in the corpora, and (c) parsing performance on them. In addition, we explore methods to improve phrase structure parsing for learner English (achieving an F -measure of 0.878). Finally, we release the full annotation guidelines, the annotated data, and the improved parser model for learner English to the public.},
+  cls={conf},
+}
+
+
+@article{sakaguchi-etal-2016-reassessing,
+    title = "Reassessing the Goals of Grammatical Error Correction: Fluency Instead of Grammaticality",
+    author = "Sakaguchi, Keisuke  and
+      Napoles, Courtney  and
+      Post, Matt  and
+      Tetreault, Joel",
+    journal = "Transactions of the Association for Computational Linguistics",
+    volume = "4",
+    year = "2016",
+    url = "https://aclanthology.org/Q16-1013",
+    doi = "10.1162/tacl_a_00091",
+    pages = "169--182",
+    abstract = "The field of grammatical error correction (GEC) has grown substantially in recent years, with research directed at both evaluation metrics and improved system performance against those metrics. One unvisited assumption, however, is the reliance of GEC evaluation on error-coded corpora, which contain specific labeled corrections. We examine current practices and show that GEC{'}s reliance on such corpora unnaturally constrains annotation and automatic evaluation, resulting in (a) sentences that do not sound acceptable to native speakers and (b) system rankings that do not correlate with human judgments. In light of this, we propose an alternate approach that jettisons costly error coding in favor of unannotated, whole-sentence rewrites. We compare the performance of existing metrics over different gold-standard annotations, and show that automatic evaluation with our new annotation scheme has very strong correlation with expert rankings (ρ = 0.82). As a result, we advocate for a fundamental and necessary shift in the goal of GEC, from correcting small, labeled error types, to producing text that has native fluency.",
+    lang={en},
+    abbr={TACL},
+    pdf={2016_tacl_reassessing.pdf},
+    slides={https://www.slideshare.net/keisks/201608-tacl},
+    project={https://github.com/keisks/reassess-gec},
+  cls={journal},
+}
+
+
+@article{Napoles2016GLEUWT,
+  title={GLEU Without Tuning},
+  author={Courtney Napoles and Keisuke Sakaguchi and Matt Post and Joel R. Tetreault},
+  journal={arXiv},
+  year={2016},
+  lang={en},
+  abbr={arXiv},
+  review={no},
+  pdf={2016_gleu_without_tuning.pdf},
+  volume={abs/1605.02592},
+  abstract={The GLEU metric was proposed for evaluating grammatical error corrections using n-gram overlap with a set of reference sentences, as opposed to precision/recall of specific annotated errors (Napoles et al., 2015). This paper describes improvements made to the GLEU metric that address problems that arise when using an increasing number of reference sets. Unlike the originally presented metric, the modified metric does not require tuning. We recommend that this version be used instead of the original version.},
+  cls={preprint},
+}
+
+
+@inproceedings{napoles-etal-2015-ground,
+    title = "Ground Truth for Grammatical Error Correction Metrics",
+    author = "Napoles, Courtney  and
+      Sakaguchi, Keisuke  and
+      Post, Matt  and
+      Tetreault, Joel",
+    booktitle = "Proceedings of the 53rd Annual Meeting of the Association for Computational Linguistics and the 7th International Joint Conference on Natural Language Processing (Volume 2: Short Papers)",
+    month = jul,
+    year = "2015",
+    address = "Beijing, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/P15-2097",
+    doi = "10.3115/v1/P15-2097",
+    pages = "588--593",
+    lang={en},
+    abbr={ACL},
+    project={https://github.com/cnap/gec-ranking},
+    pdf={2015_acl_groundtruth.pdf},
+    abstract={How do we know which grammatical error correction (GEC) system is best? A number of metrics have been proposed over the years, each motivated by weaknesses of previous metrics; however, the metrics themselves have not been compared to an empirical gold standard grounded in human judgments. We conducted the first human evaluation of GEC system outputs, and show that the rankings produced by metrics such as MaxMatch and I-measure do not correlate well with this ground truth. As a step towards better metrics, we also propose GLEU, a simple variant of BLEU, modified to account for both the source and the reference, and show that it hews much more closely to human judgments.},
+  cls={conf},
+}
+
+
+@inproceedings{sakaguchi-etal-2015-effective,
+    title = "Effective Feature Integration for Automated Short Answer Scoring",
+    author = "Sakaguchi, Keisuke  and
+      Heilman, Michael  and
+      Madnani, Nitin",
+    booktitle = "Proceedings of the 2015 Conference of the North {A}merican Chapter of the Association for Computational Linguistics: Human Language Technologies",
+    month = may # "{--}" # jun,
+    year = "2015",
+    address = "Denver, Colorado",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/N15-1111",
+    doi = "10.3115/v1/N15-1111",
+    pages = "1049--1054",
+    lang={en},
+    abbr={NAACL},
+    pdf={2015_naacl_stacking.pdf},
+    slides={http://www.slideshare.net/keisks/naacl15-sakaguchi},
+    abstract={A major opportunity for NLP to have a realworld impact is in helping educators score student writing, particularly content-based writing (i.e., the task of automated short answer scoring). A major challenge in this enterprise is that scored responses to a particular question (i.e., labeled data) are valuable for modeling but limited in quantity. Additional information from the scoring guidelines for humans, such as exemplars for each score level and descriptions of key concepts, can also be used. Here, we explore methods for integrating scoring guidelines and labeled responses, and we find that stacked generalization (Wolpert, 1992) improves performance, especially for small training sets.},
+  cls={conf},
+}
+
+
+@inproceedings{sakaguchi-etal-2014-efficient,
+    title = "Efficient Elicitation of Annotations for Human Evaluation of Machine Translation",
+    author = "Sakaguchi, Keisuke  and
+      Post, Matt  and
+      Van Durme, Benjamin",
+    booktitle = "Proceedings of the Ninth Workshop on Statistical Machine Translation",
+    month = jun,
+    year = "2014",
+    address = "Baltimore, Maryland, USA",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/W14-3301",
+    doi = "10.3115/v1/W14-3301",
+    pages = "1--11",
+    selected={true},
+    lang={en},
+    abstract={A main output of the annual Workshop on Statistical Machine Translation (WMT) is a ranking of the systems that participated in its shared translation tasks, produced by aggregating pairwise sentencelevel comparisons collected from human judges. Over the past few years, there have been a number of tweaks to the aggregation formula in attempts to address issues arising from the inherent ambiguity and subjectivity of the task, as well as weaknesses in the proposed models and the manner of model selection. We continue this line of work by adapting the TrueSkill TM algorithm — an online approach for modeling the relative skills of players in ongoing competitions, such as Microsoft’s Xbox Live — to the human evaluation of machine translation output. Our experimental results show that TrueSkill outperforms other recently proposed models on accuracy, and also can significantly reduce the number of pairwise annotations that need to be collected by sampling non-uniformly from the space of system competitions.},
+    abbr={WMT},
+    pdf={2014_wmt_trueskill.pdf},
+    project={https://github.com/keisks/wmt-trueskill},
+    slides={https://www.slideshare.net/keisks/wmt14sakaguchi},
+  cls={workshop},
+}
+
+@inproceedings{sakaguchi-etal-2013-discriminative,
+    title = "Discriminative Approach to Fill-in-the-Blank Quiz Generation for Language Learners",
+    author = "Sakaguchi, Keisuke  and
+      Arase, Yuki  and
+      Komachi, Mamoru",
+    booktitle = "Proceedings of the 51st Annual Meeting of the Association for Computational Linguistics (Volume 2: Short Papers)",
+    month = aug,
+    year = "2013",
+    address = "Sofia, Bulgaria",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/P13-2043",
+    pages = "238--242",
+    lang={en},
+    abbr={ACL},
+    pdf={2013_acl_discSimESL.pdf},
+    project={https://github.com/keisks/disc-sim-esl},
+    poster={https://www.slideshare.net/keisks/acl2013-v2},
+    abstract={We propose discriminative methods to generate semantic distractors of fill-in-theblank quiz for language learners using a large-scale language learners’ corpus. Unlike previous studies, the proposed methods aim at satisfying both reliability and validity of generated distractors; distractors should be exclusive against answers to avoid multiple answers in one quiz, and distractors should discriminate learners’ proficiency. Detailed user evaluation with 3 native and 23 non-native speakers of English shows that our methods achieve better reliability and validity than previous methods.},
+  cls={conf},
+}
+}
+
+
+@inproceedings{yoshimoto-etal-2013-naist,
+    title = "{NAIST} at 2013 {C}o{NLL} Grammatical Error Correction Shared Task",
+    author = "Yoshimoto, Ippei  and
+      Kose, Tomoya  and
+      Mitsuzawa, Kensuke  and
+      Sakaguchi, Keisuke  and
+      Mizumoto, Tomoya  and
+      Hayashibe, Yuta  and
+      Komachi, Mamoru  and
+      Matsumoto, Yuji",
+    booktitle = "Proceedings of the Seventeenth Conference on Computational Natural Language Learning: Shared Task",
+    month = aug,
+    year = "2013",
+    address = "Sofia, Bulgaria",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/W13-3604",
+    pages = "26--33",
+    lang={en},
+    review={no},
+    abbr={CoNLL},
+    pdf={2013_bea_naist_gec.pdf},
+  cls={workshop},
+    abstract={This paper describes the Nara Institute of Science and Technology (NAIST) error correction system in the CoNLL 2013 Shared Task. We constructed three systems: a system based on the Treelet Language Model for verb form and subjectverb agreement errors; a classifier trained on both learner and native corpora for noun number errors; a statistical machine translation (SMT)-based model for preposition and determiner errors. As for subject-verb agreement errors, we show that the Treelet Language Model-based approach can correct errors in which the target verb is distant from its subject. Our system ranked fourth on the official run.},
+}
+
+@inproceedings{mizumoto-etal-2013-naist,
+    title = "{NAIST} at the {NLI} 2013 Shared Task",
+    author = "Mizumoto, Tomoya  and
+      Hayashibe, Yuta  and
+      Sakaguchi, Keisuke  and
+      Komachi, Mamoru  and
+      Matsumoto, Yuji",
+    booktitle = "Proceedings of the Eighth Workshop on Innovative Use of {NLP} for Building Educational Applications",
+    month = jun,
+    year = "2013",
+    address = "Atlanta, Georgia",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/W13-1717",
+    pages = "134--139",
+    lang={en},
+    review={no},
+    abbr={BEA@NAACL},
+    pdf={2013_bea_naist_nli.pdf},
+    abstract={This paper describes the Nara Institute of Science and Technology (NAIST) native language identification (NLI) system in the NLI 2013 Shared Task. We apply feature selection using a measure based on frequency for the closed track and try Capping and Sampling data methods for the open tracks. Our system ranked ninth in the closed track, third in open track 1 and fourth in open track 2.},
+  cls={workshop},
+}
+
+@inproceedings{shigeto-etal-2013-construction,
+    title = "Construction of {E}nglish {MWE} Dictionary and its Application to {POS} Tagging",
+    author = "Shigeto, Yutaro  and
+      Azuma, Ai  and
+      Hisamoto, Sorami  and
+      Kondo, Shuhei  and
+      Kose, Tomoya  and
+      Sakaguchi, Keisuke  and
+      Yoshimoto, Akifumi  and
+      Yung, Frances  and
+      Matsumoto, Yuji",
+    booktitle = "Proceedings of the 9th Workshop on Multiword Expressions",
+    month = jun,
+    year = "2013",
+    address = "Atlanta, Georgia, USA",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/W13-1021",
+    pages = "139--144",
+    lang={en},
+    abbr={MWE@NAACL},
+    pdf={2013_mwe.pdf},
+    abstract={This paper reports our ongoing project for constructing an English multiword expression (MWE) dictionary and NLP tools based on the developed dictionary. We extracted functional MWEs from the English part of Wiktionary, annotated the Penn Treebank (PTB) with MWE information, and conducted POS tagging experiments. We report how the MWE annotation is done on PTB and the results of POS and MWE tagging experiments.},
+  cls={workshop},
+}
+
+@inproceedings{sakaguchi-etal-2012-joint,
+    title = "Joint {E}nglish Spelling Error Correction and {POS} Tagging for Language Learners Writing",
+    author = "Sakaguchi, Keisuke  and
+      Mizumoto, Tomoya  and
+      Komachi, Mamoru  and
+      Matsumoto, Yuji",
+    booktitle = "Proceedings of {COLING} 2012",
+    month = dec,
+    year = "2012",
+    address = "Mumbai, India",
+    publisher = "The COLING 2012 Organizing Committee",
+    url = "https://aclanthology.org/C12-1144",
+    pages = "2357--2374",
+    lang={en},
+    abbr={COLING},
+    pdf={2012_coling_joint.pdf},
+    slides={https://www.slideshare.net/keisks/sakaguchi-coling12},
+    abstract={We propose an approach to correcting spelling errors and assigning part-of-speech (POS) tags simultaneously for sentences written by learners of English as a second language (ESL). In ESL writing, there are several types of errors such as preposition, determiner, verb, noun, and spelling errors. Spelling errors often interfere with POS tagging and syntactic parsing, which makes other error detection and correction tasks very difficult. In studies of grammatical error detection and correction in ESL writing, spelling correction has been regarded as a preprocessing step in a pipeline. However, several types of spelling errors in ESL are difficult to correct in the preprocessing, for example, homophones (e.g. *hear/here), confusion (*quiet/quite), split (*now a day/nowadays), merge (*swimingpool/swimming pool), inflection (*please/pleased) and derivation (*badly/bad), where the incorrect word is actually in the vocabulary and grammatical information is needed to disambiguate. In order to correct these spelling errors, and also typical typographical errors (*begginning/beginning), we propose a joint analysis of POS tagging and spelling error correction with a CRF (Conditional Random Field)-based model. We present an approach that achieves significantly better accuracies for both POS tagging and spelling correction, compared to existing approaches using either individual or pipeline analysis. We also show that the joint model can deal with novel types of misspelling in ESL writing.},
+  cls={conf},
+}
+
+@inproceedings{sakaguchi-etal-2012-naist,
+    title = "{NAIST} at the {HOO} 2012 Shared Task",
+    author = "Sakaguchi, Keisuke  and
+      Hayashibe, Yuta  and
+      Kondo, Shuhei  and
+      Kanashiro, Lis  and
+      Mizumoto, Tomoya  and
+      Komachi, Mamoru  and
+      Matsumoto, Yuji",
+    booktitle = "Proceedings of the Seventh Workshop on Building Educational Applications Using {NLP}",
+    month = jun,
+    year = "2012",
+    address = "Montr{\'e}al, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/W12-2033",
+    pages = "281--288",
+    lang={en},
+    review={no},
+    abbr={BEA@NAACL},
+    pdf={2012_bea_naist_gec.pdf},
+    poster={https://www.slideshare.net/keisks/bea12},
+    abstract={This paper describes the Nara Institute of Science and Technology (NAIST) error correction system in the Helping Our Own (HOO) 2012 Shared Task. Our system targets preposition and determiner errors with spelling correction as a pre-processing step. The result shows that spelling correction improves the Detection, Correction, and Recognition F-scores for preposition errors. With regard to preposition error correction, F-scores were not improved when using the training set with correction of all but preposition errors. As for determiner error correction, there was an improvement when the constituent parser was trained with a concatenation of treebank and modified treebank where all the articles appearing as the first word of an NP were removed. Our system ranked third in preposition and fourth in determiner error corrections.},
+  cls={workshop},
+}
+
+
+@string{acl = {"Association for Computational Linguistics"}}
+
+
