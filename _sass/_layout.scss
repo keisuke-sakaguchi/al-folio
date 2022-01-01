@@ -29,6 +29,15 @@
   }
 }
 
+// hide profile images from mobile
+@media all and (min-width:0px) and (max-width: 575px) {
+ .profile {
+   img {
+     width: 0%;
+   }
+ }
+}
+
 // TODO: redefine content layout.
 
 
