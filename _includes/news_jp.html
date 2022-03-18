@@ -5,7 +5,7 @@
       {% assign news = site.news_jp | reverse %}
       {% for item in news %}
         <tr>
-          <th scope="row">{{ item.date | date: "%Y/%m/%d" }} &nbsp; &nbsp;</th>
+          <th scope="row">{{ item.date | date: "%Y/%m/%d" }} &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </th>
           <td>
             {% if item.inline %}
               {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
