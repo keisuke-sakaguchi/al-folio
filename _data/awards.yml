@@ -1,10 +1,10 @@
 - name_jp: 言語処理学会年次大会　優秀賞
   date: 2022
-  note: 9/386 (2.3%)
+  note: 2.3% (9/386)
 
 - name: AAAI Outstanding Paper (Single Best Paper) Award
   date: 2020
-  note: 1/7737 (0.1%)
+  note: 0.1% (1/7737)
   name_jp: AAAI Outstanding Paper (Single Best Paper) Award
 
 - name_jp: NLP若手の会 奨励賞
@@ -12,20 +12,12 @@
 
 - name: ACL Outstanding Paper Award
   date: 2017
-  note: 1.5%
+  note: 1.5% (8/567)
   name_jp: ACL Outstanding Paper Award
 
 - name_jp: 言語処理学会　論文賞
   date: 2017
-  note: 12%
-
-- name: The Nakajima Foundation Ph.D. Scholarship (Full scholarship)
-  date: 2013-2018
-  name_jp: 中島記念国際交流財団 日本人海外留学奨学生 
-
-- name: Research Fellowship of JSPS for Young Scientists (DC1)	
-  date: 2013
-  name_jp: 日本学術振興会特別研究員 (DC1)
+  note: 12% (3/25)
 
 - name: NAIST Excellent Student Scholarship	
   date: 2013
