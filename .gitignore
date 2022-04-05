@@ -8,4 +8,8 @@ _site
 .tweet-cache
 Gemfile.lock
 vendor
+./_data/funds.yml
+./_data/members.yml
+./_data/mentee.yml
+./_data/service.yml
 
