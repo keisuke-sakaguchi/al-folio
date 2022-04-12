@@ -2,6 +2,41 @@
 ---
 
 
+@inproceedings{Kasai2021BidimensionalLG,
+  title={Bidimensional Leaderboards: Generate and Evaluate Language Hand in Hand},
+  author={Jungo Kasai and Keisuke Sakaguchi and Ronan Le Bras and Lavinia Dunagan and Jacob Morrison and Alexander R. Fabbri and Yejin Choi and Noah A. Smith},
+  year={2022},
+  booktitle = "Proceedings of the 2022 Conference of the North {A}merican Chapter of the Association for Computational Linguistics",
+  lang={en},
+  abbr={NAACL},
+  month={July},
+  address={Seattle, Washington},
+  publisher = {Association for Computational Linguistics},
+  pdf={2021_arxiv_billboards.pdf},
+  review={yes},
+  project={https://nlp.cs.washington.edu/billboard/},
+  abstract={Natural language processing researchers have identified limitations of evaluation methodology for generation tasks, with new questions raised about the validity of automatic metrics and of crowdworker judgments. Meanwhile, efforts to improve generation models tend to focus on simple n-gram overlap metrics (e.g., BLEU, ROUGE). We argue that new advances on models and metrics should each more directly benefit and inform the other. We therefore propose a generalization of leaderboards, bidimensional leaderboards (BILLBOARDs), that simultaneously tracks progress in language generation tasks and metrics for their evaluation. Unlike conventional unidimensional leaderboards that sort submitted systems by predetermined metrics, a BILLBOARD accepts both generators and evaluation metrics as competing entries. A BILLBOARD automatically creates an ensemble metric that selects and linearly combines a few metrics based on a global analysis across generators. Further, metrics are ranked based on their correlations with human judgments. We release four BILLBOARDs for machine translation, summarization, and image captioning. We demonstrate that a linear ensemble of a few diverse metrics sometimes substantially outperforms existing metrics in isolation. Our mixed-effects model analysis shows that most automatic metrics, especially the reference-based ones, overrate machine over human generation, demonstrating the importance of updating metrics as generation models become stronger (and perhaps more similar to humans) in the future.},
+  cls={conf},
+}
+
+@inproceedings{Kasai2021TransparentHE,
+  title={Transparent Human Evaluation for Image Captioning},
+  author={Jungo Kasai and Keisuke Sakaguchi and Lavinia Dunagan and Jacob Morrison and Ronan Le Bras and Yejin Choi and Noah A. Smith},
+  year={2022},
+  booktitle = "Proceedings of the 2022 Conference of the North {A}merican Chapter of the Association for Computational Linguistics",
+  lang={en},
+  abbr={NAACL},
+  review={yes},
+  month={July},
+  address={Seattle, Washington},
+  publisher = {Association for Computational Linguistics},
+  pdf={2021_arxiv_thumb.pdf},
+  abstract={We establish a rubric-based human evaluation protocol for image captioning models. Our scoring rubrics and their definitions are carefully developed based on machineand humangenerated captions on the MSCOCO dataset. Each caption is evaluated along two main dimensions in a tradeoff (precision and recall) as well as other aspects that measure the text quality (fluency, conciseness, and inclusive language). Our evaluations demonstrate several critical problems of the current evaluation practice. Human-generated captions show substantially higher quality than machine-generated ones, especially in coverage of salient information (i.e., recall), while all automatic metrics say the opposite. Our rubric-based results reveal that CLIPScore, a recent metric that uses image features, better correlates with human judgments than conventional text-only metrics because it is more sensitive to recall. We hope that this work will promote a more transparent evaluation protocol for image captioning and its automatic metrics.},
+  project={https://github.com/jungokasai/THumB},
+  cls={conf},
+}
+
+
 @inproceedings{Tandon2021InterscriptAD,
   title={Interscript: A dataset for interactive learning of scripts through error feedback},
   author={Niket Tandon and Aman Madaan and Peter Clark and Keisuke Sakaguchi and Yiming Yang},
@@ -15,36 +50,6 @@
   cls={workshop},
 }
 
-
-@article{Kasai2021BidimensionalLG,
-  title={Bidimensional Leaderboards: Generate and Evaluate Language Hand in Hand},
-  author={Jungo Kasai and Keisuke Sakaguchi and Ronan Le Bras and Lavinia Dunagan and Jacob Morrison and Alexander R. Fabbri and Yejin Choi and Noah A. Smith},
-  journal={arXiv},
-  year={2021},
-  volume={abs/2112.04189},
-  lang={en},
-  abbr={arXiv},
-  pdf={2021_arxiv_billboards.pdf},
-  review={no},
-  project={https://nlp.cs.washington.edu/billboard/},
-  abstract={Natural language processing researchers have identified limitations of evaluation methodology for generation tasks, with new questions raised about the validity of automatic metrics and of crowdworker judgments. Meanwhile, efforts to improve generation models tend to focus on simple n-gram overlap metrics (e.g., BLEU, ROUGE). We argue that new advances on models and metrics should each more directly benefit and inform the other. We therefore propose a generalization of leaderboards, bidimensional leaderboards (BILLBOARDs), that simultaneously tracks progress in language generation tasks and metrics for their evaluation. Unlike conventional unidimensional leaderboards that sort submitted systems by predetermined metrics, a BILLBOARD accepts both generators and evaluation metrics as competing entries. A BILLBOARD automatically creates an ensemble metric that selects and linearly combines a few metrics based on a global analysis across generators. Further, metrics are ranked based on their correlations with human judgments. We release four BILLBOARDs for machine translation, summarization, and image captioning. We demonstrate that a linear ensemble of a few diverse metrics sometimes substantially outperforms existing metrics in isolation. Our mixed-effects model analysis shows that most automatic metrics, especially the reference-based ones, overrate machine over human generation, demonstrating the importance of updating metrics as generation models become stronger (and perhaps more similar to humans) in the future.},
-  cls={preprint},
-}
-
-@article{Kasai2021TransparentHE,
-  title={Transparent Human Evaluation for Image Captioning},
-  author={Jungo Kasai and Keisuke Sakaguchi and Lavinia Dunagan and Jacob Morrison and Ronan Le Bras and Yejin Choi and Noah A. Smith},
-  journal={arXiv},
-  year={2021},
-  volume={abs/2111.08940},
-  lang={en},
-  abbr={arXiv},
-  review={no},
-  pdf={2021_arxiv_thumb.pdf},
-  abstract={We establish a rubric-based human evaluation protocol for image captioning models. Our scoring rubrics and their definitions are carefully developed based on machineand humangenerated captions on the MSCOCO dataset. Each caption is evaluated along two main dimensions in a tradeoff (precision and recall) as well as other aspects that measure the text quality (fluency, conciseness, and inclusive language). Our evaluations demonstrate several critical problems of the current evaluation practice. Human-generated captions show substantially higher quality than machine-generated ones, especially in coverage of salient information (i.e., recall), while all automatic metrics say the opposite. Our rubric-based results reveal that CLIPScore, a recent metric that uses image features, better correlates with human judgments than conventional text-only metrics because it is more sensitive to recall. We hope that this work will promote a more transparent evaluation protocol for image captioning and its automatic metrics.},
-  project={https://github.com/jungokasai/THumB},
-  cls={preprint},
-}
 
 
 @article{Madaan2021ImprovingNM,
