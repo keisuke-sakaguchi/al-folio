@@ -1,6 +1,21 @@
 ---
 ---
 
+@article{kasai2022beam,
+  title={Beam Decoding with Controlled Patience},
+  author={Jungo Kasai and Keisuke Sakaguchi and Ronan Le Bras and Dragomir Radev and Yejin Choi and Noah A. Smith},
+  journal={arXiv},
+  year={2022},
+  volume={abs/2204.05424},
+  lang={en},
+  review={no},
+  abbr={arXiv},
+  pdf={2022_arxiv_beam_with_patience.pdf},
+  project={https://github.com/jungokasai/beam_with_patience},
+  abstract={Text generation with beam search has proven successful in a wide range of applications. The commonly-used implementation of beam decoding follows a first come, first served heuristic: it keeps a set of already completed sequences over time steps and stops when the size of this set reaches the beam size. We introduce a patience factor, a simple modification to this decoding algorithm, that generalizes the stopping criterion and provides flexibility to the depth of search. Extensive empirical results demonstrate that the patience factor improves decoding performance of strong pretrained models on news text summarization and machine translation over diverse language pairs, with a negligible inference slowdown. Our approach only modifies one line of code and can be thus readily incorporated in any implementation.},
+  cls={preprint},
+}
+
 
 @inproceedings{Kasai2021BidimensionalLG,
   title={Bidimensional Leaderboards: Generate and Evaluate Language Hand in Hand},
@@ -18,6 +33,7 @@
   abstract={Natural language processing researchers have identified limitations of evaluation methodology for generation tasks, with new questions raised about the validity of automatic metrics and of crowdworker judgments. Meanwhile, efforts to improve generation models tend to focus on simple n-gram overlap metrics (e.g., BLEU, ROUGE). We argue that new advances on models and metrics should each more directly benefit and inform the other. We therefore propose a generalization of leaderboards, bidimensional leaderboards (BILLBOARDs), that simultaneously tracks progress in language generation tasks and metrics for their evaluation. Unlike conventional unidimensional leaderboards that sort submitted systems by predetermined metrics, a BILLBOARD accepts both generators and evaluation metrics as competing entries. A BILLBOARD automatically creates an ensemble metric that selects and linearly combines a few metrics based on a global analysis across generators. Further, metrics are ranked based on their correlations with human judgments. We release four BILLBOARDs for machine translation, summarization, and image captioning. We demonstrate that a linear ensemble of a few diverse metrics sometimes substantially outperforms existing metrics in isolation. Our mixed-effects model analysis shows that most automatic metrics, especially the reference-based ones, overrate machine over human generation, demonstrating the importance of updating metrics as generation models become stronger (and perhaps more similar to humans) in the future.},
   cls={conf},
 }
+
 
 @inproceedings{Kasai2021TransparentHE,
   title={Transparent Human Evaluation for Image Captioning},
