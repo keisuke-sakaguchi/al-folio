@@ -18,10 +18,10 @@ social: true # includes social icons at the bottom of the page
 I am a research scientist at the Allen Institute for AI. My research interests lie at the intersection of Natural Language Processing, Machine Learning, and Psycholinguistics.
 My long-term research goals are 
 
-1. to understand human intelligence, especially natural langauge processing
+1. to understand human intelligence, especially natural langauge processing, and 
 2. to build embodied AI that is as robust and efficient as humans. 
 
 More specifically, my research interests include: robust NLP models for noisy texts (e.g., text normalization, parsing, automated grammatical error correction), 
-commonsense knowledge acquisition and reasoning, NLP for educational purposes (first and second language acquisition), and efficient and reliable data collection and evaluation metrics.
+commonsense knowledge acquisition and reasoning, NLP for educational purposes (first and second language acquisition), and efficient and reliable data collection and designing evaluation metrics (meta-evaluation).
 I received my Ph.D. from Johns Hopkins University, Center for Language and Speech Processing (CLSP).
 
