@@ -36,6 +36,10 @@
      width: 0%;
    }
  }
+ td{
+ white-space:nowrap;
+ overflow:scroll;
+ }
 }
 
 // TODO: redefine content layout.
