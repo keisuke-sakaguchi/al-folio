@@ -1,11 +1,20 @@
+- name: Tohoku University
+  address: Miyagi, Japan
+  position: Associate Professor
+  period: 07/2022 -- present
+  name_jp: 東北大学 大学院情報科学研究科
+  address_jp: Miyagi, Japan
+  position_jp: 准教授
+  period_jp: 07/2022 -- 現在
+
 - name: Allen Institute for AI (AI2) 
   address: Seattle, WA, USA
   position: Research Scientist
-  period: 08/2018 -- present
+  period: 08/2018 -- 06/2022
   name_jp: Allen Institute for AI (AI2) 
   address_jp: Seattle, WA, USA
   position_jp: リサーチサイエンティスト
-  period_jp: 08/2018 -- 現在
+  period_jp: 08/2018 -- 06/2022
 
 - name: IBM T. J. Watson Research Center
   address: Yorktown Heights, NY, USA
