@@ -1,6 +1,58 @@
 ---
 ---
 
+@article{kasai2022realtimeqa,
+  title = {RealTime QA: What's the Answer Right Now?},
+  author = {Kasai, Jungo and Sakaguchi, Keisuke and Takahashi, Yoichi and Bras, Ronan Le and Asai, Akari and Yu, Xinyan and Radev, Dragomir and Smith, Noah A. and Choi, Yejin and Inui, Kentaro},
+  journal={arXiv},
+  year={2022},
+  volume = {abs/2207.13332},
+  doi = {10.48550/ARXIV.2207.13332},
+  lang={en},
+  review={no},
+  abbr={arXiv},
+  pdf={2022_arxiv_realtimeqa.pdf},
+  project={https://realtimeqa.github.io/},
+  abstract={We introduce RealTime QA, a dynamic question answering (QA) platform that announces questions and evaluates systems on a regular basis (weekly in this version). RealTime QA inquires about the current world, and QA systems need to answer questions about novel events or information. It therefore challenges static, conventional assumptions in open domain QA datasets and pursues, instantaneous applications. We build strong baseline models upon large pretrained language models, including GPT-3 and T5. Our benchmark is an ongoing effort, and this preliminary report presents real-time evaluation results over the past month. Our experimental results show that GPT-3 can often properly update its generation results, based on newly-retrieved documents, highlighting the importance of up-to-date information retrieval. Nonetheless, we find that GPT-3 tends to return outdated answers when retrieved documents do not provide sufficient information to find an answer. This suggests an important avenue for future research: can an open domain QA system identify such unanswerable cases and communicate with the user or even the retrieval module to modify the retrieval results? We hope that RealTime QA will spur progress in instantaneous applications of question answering and beyond.},
+  cls={preprint},
+}
+
+
+@article{jiang2022delphi,
+  title = {Can Machines Learn Morality? The Delphi Experiment},
+  author = {Jiang, Liwei and Hwang, Jena D. and Bhagavatula, Chandra and Bras, Ronan Le and Liang, Jenny and Dodge, Jesse and Sakaguchi, Keisuke and Forbes, Maxwell and Borchardt, Jon and Gabriel, Saadia and Tsvetkov, Yulia and Etzioni, Oren and Sap, Maarten and Rini, Regina and Choi, Yejin},
+  journal={arXiv},
+  year={2022},
+  volume = {abs/2110.07574},
+  doi = {10.48550/ARXIV.2110.07574},
+  lang={en},
+  review={no},
+  abbr={arXiv},
+  pdf={2022_arxiv_delphi.pdf},
+  project={https://delphi.allenai.org/},
+  abstract={As AI systems become increasingly powerful and pervasive, there are growing concerns about machines' morality or a lack thereof. Yet, teaching morality to machines is a formidable task, as morality remains among the most intensely debated questions in humanity, let alone for AI. Existing AI systems deployed to millions of users, however, are already making decisions loaded with moral implications, which poses a seemingly impossible challenge: teaching machines moral sense, while humanity continues to grapple with it.
+To explore this challenge, we introduce Delphi, an experimental framework based on deep neural networks trained directly to reason about descriptive ethical judgments, e.g., "helping a friend" is generally good, while "helping a friend spread fake news" is not. Empirical results shed novel insights on the promises and limits of machine ethics; Delphi demonstrates strong generalization capabilities in the face of novel ethical situations, while off-the-shelf neural network models exhibit markedly poor judgment including unjust biases, confirming the need for explicitly teaching machines moral sense.
+Yet, Delphi is not perfect, exhibiting susceptibility to pervasive biases and inconsistencies. Despite that, we demonstrate positive use cases of imperfect Delphi, including using it as a component model within other imperfect AI systems. Importantly, we interpret the operationalization of Delphi in light of prominent ethical theories, which leads us to important future research questions.},
+  cls={preprint},
+}
+
+
+@article{mita2022tetra,
+  title = {Towards Automated Document Revision: Grammatical Error Correction, Fluency Edits, and Beyond},
+  author={Mita, Masato and Sakaguchi, Keisuke and Hagiwara, Masato and Mizumoto, Tomoya and Suzuki, Jun and Inui, Kentaro},
+  journal={arXiv},
+  year={2022},
+  volume = {abs/2205.11484},
+  doi = {10.48550/ARXIV.2205.11484},
+  lang={en},
+  review={no},
+  abbr={arXiv},
+  pdf={2022_arxiv_tetra.pdf},
+  project={https://github.com/chemicaltree/tetra},
+  abstract={Natural language processing technology has rapidly improved automated grammatical error correction tasks, and the community begins to explore document-level revision as one of the next challenges. To go beyond sentence-level automated grammatical error correction to NLP-based document-level revision assistant, there are two major obstacles: (1) there are few public corpora with document-level revisions being annotated by professional editors, and (2) it is not feasible to elicit all possible references and evaluate the quality of revision with such references because there are infinite possibilities of revision. This paper tackles these challenges. First, we introduce a new document-revision corpus, TETRA, where professional editors revised academic papers sampled from the ACL anthology which contain few trivial grammatical errors that enable us to focus more on document- and paragraph-level edits such as coherence and consistency. Second, we explore reference-less and interpretable methods for meta-evaluation that can detect quality improvements by document revision. We show the uniqueness of TETRA compared with existing document revision corpora and demonstrate that a fine-tuned pre-trained language model can discriminate the quality of documents after revision even when the difference is subtle. This promising result will encourage the community to further explore automated document revision models and metrics in future.},
+  cls={preprint},
+}
+
 @article{kasai2022twist,
   title = {Twist Decoding: Diverse Generators Guide Each Other},
   author = {Kasai, Jungo and Sakaguchi, Keisuke and Bras, Ronan Le and Peng, Hao and Lu, Ximing and Radev, Dragomir and Choi, Yejin and Smith, Noah A.},
