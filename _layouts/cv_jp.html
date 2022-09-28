@@ -41,7 +41,7 @@
         <tr>
         <td style="width: 1%" align="left"></td>
         <td style="width: 99%" align="left">
-          Email: <a class="cv" href="mailto:keusuke.sakaguchi@gmail.com">keisuke.sakaguchi@gmail.com</a>
+          Email: <a class="cv" href="mailto:keusuke.sakaguchi@tohoku.ac.jp">keisuke.sakaguchi@tohoku.ac.jp</a>
         </td>
         </tr>
 
@@ -68,10 +68,10 @@
         {% for exp in site.data.experience %}
           <tr>
           <td style="width: 1%" align="left"></td>
-          <td class="org" style="width: 60%;" align="left">
+          <td class="org" style="width: 70%;" align="left">
             {{ exp.name_jp }}
           </td>
-          <td style="width: 40%" align="right">
+          <td style="width: 30%" align="right">
             {{ exp.period_jp }}
             <!--{{ exp.address_jp }}-->
           </td>
@@ -137,6 +137,52 @@
           </td>
           </tr>
         {% endif %}
+        {% endfor %}
+      </table>
+      <br/>
+
+      <h4 class="cv"> 学会活動 </h4>
+      <table class="cv" style="width: 100%;">
+      {% for service in site.data.service %}
+      {% if service.title %}
+        <tr>
+        <td style="width: 1%" align="left"></td>
+        <td style="width: 85%;" align="left">
+        <h5 class="cv">{{ service.title }}:</h5>
+        <p class="cv"> {{ service.venues }} </p>
+        </td>
+        </tr>
+      {% endif %}
+      {% endfor %}
+      </table>
+      <br/>
+
+      <h4 class="cv"> 招待講演 </h4>
+      <table class="cv" style="width: 100%;">
+        {% for talk in site.data.talks %}
+          <tr>
+          <td style="width: 1%" align="left"></td>
+          <td style="width: 85%;" align="left">
+            {% if talk.title_jp %}
+              {{ talk.title_jp }}
+            {% else %}
+              {{ talk.title }}
+            {% endif %}
+          </td>
+          <td style="width: 15%" align="right">
+            {{ talk.date }}
+          </td>
+          </tr>
+          <tr>
+          <td style="width: 1%" align="left"></td>
+          <td class="position" style="width: 60%" align="left">
+            {% if talk.address_jp %}
+              {{ talk.address_jp }}
+            {% else %}
+              {{ talk.address }}
+            {% endif %}
+          </td>
+          </tr>
         {% endfor %}
       </table>
       <br/>

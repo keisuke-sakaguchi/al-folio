@@ -1,3 +1,15 @@
+- title: 'Large Language Models: What will happen next?'
+  address: AIST AI Research Center, Japan
+  address_jp: 産業技術総合研究所 人工知能研究センター，東京
+  date: 09/27/2022
+  lang: en
+
+- title: 'Large Language Models: What will happen next?'
+  address: University of Tokyo, Matsuo-Lab., Japan
+  address_jp: 東京大学　松尾研究室，東京
+  date: 08/23/2022
+  lang: jp
+
 - title: Robust Text Correction for Grammar and Fluency
   address: Microsoft Research, Redmond, WA
   date: 09/27/2018
@@ -18,23 +30,28 @@
   date: 02/09/2018
   lang: en
 
-- title: 文法および流暢性を考慮した頑健なテキスト誤り訂正
-  address: 千葉工業大学ステアラボ人工知能セミナー, 東京
+- title: Robust Natural Language Processing
+  title_jp: 文法および流暢性を考慮した頑健なテキスト誤り訂正
+  address_jp: 千葉工業大学ステアラボ人工知能セミナー, 東京
+  address: Chiba Institute of Technology, Software Technology and Artificial Intelligence Research Laboratory, Tokyo, Japan
   date: 12/14/2017
   lang: jp
 
 - title: Robust Natural Language Processing
-  address: NTTコミュニケーション科学研究所, 京都
+  address_jp: NTTコミュニケーション科学研究所, 京都
+  address: NTT Communication Science Laboratories, Kyoto, Japan
   date: 12/12/2017
   lang: jp
 
 - title: Robust Natural Language Processing
-  address: 東北大学　乾・岡崎研究室, 仙台
+  address_jp: 東北大学　乾・岡崎研究室, 仙台
+  address: Tohoku University, Inui-Okazaki Lab., Sendai, Japan
   date: 12/08/2017
   lang: jp
 
 - title: Robust Natural Language Processing
-  address: 首都大学東京　小町研究室, 東京
+  address_jp: 首都大学東京　小町研究室, 東京
+  address: Tokyo Metropolitan University, Natural Language Processing Group. Tokyo, Japan.
   date: 12/05/2017
   lang: jp
 

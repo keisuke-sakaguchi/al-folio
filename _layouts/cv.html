@@ -50,7 +50,7 @@
         <tr>
         <td style="width: 1%" align="left"></td>
         <td style="width: 99%" align="left">
-        Email: <a class="cv" href="mailto:keisuke.sakaguchi@gmail.com">keisuke.sakaguchi@gmail.com</a>
+        Email: <a class="cv" href="mailto:keisuke.sakaguchi@tohoku.ac.jp">keisuke.sakaguchi@tohoku.ac.jp</a>
         </td>
         </tr>
 
@@ -141,14 +141,33 @@
       </table>
       <br/>
 
-      <!--
+
+      <h4 class="cv"> Professional activities </h4>
+      <table class="cv" style="width: 100%;">
+      {% for service in site.data.service %}
+      {% if service.title %}
+        <tr>
+        <td style="width: 1%" align="left"></td>
+        <td style="width: 85%;" align="left">
+        <h5 class="cv">{{ service.title }}:</h5>
+        <p class="cv"> {{ service.venues }} </p>
+        </td>
+        </tr>
+      {% endif %}
+      {% endfor %}
+      </table>
+      <br/>
+
+
+
+
       <h4 class="cv"> Invited Talks </h4>
       <table class="cv" style="width: 100%;">
         {% for talk in site.data.talks %}
           <tr>
           <td style="width: 1%" align="left"></td>
           <td style="width: 85%;" align="left">
-            {{ talk.address }}
+            {{ talk.title }}
           </td>
           <td style="width: 15%" align="right">
             {{ talk.date }}
@@ -156,15 +175,13 @@
           </tr>
           <tr>
           <td style="width: 1%" align="left"></td>
-          <td style="width: 60%" align="left">
-            Title: {{ talk.title }}
+          <td class="position" style="width: 60%" align="left">
+            {{ talk.address }}
           </td>
           </tr>
-
         {% endfor %}
       </table>
       <br/>
-      -->
 
 
       <h4 class="cv"> Publications </h4>
