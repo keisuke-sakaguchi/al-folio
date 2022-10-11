@@ -53,20 +53,22 @@ Yet, Delphi is not perfect, exhibiting susceptibility to pervasive biases and in
   cls={preprint},
 }
 
-@article{kasai2022twist,
+@inproceedings{kasai2022twist,
   title = {Twist Decoding: Diverse Generators Guide Each Other},
   author = {Kasai, Jungo and Sakaguchi, Keisuke and Bras, Ronan Le and Peng, Hao and Lu, Ximing and Radev, Dragomir and Choi, Yejin and Smith, Noah A.},
-  journal={arXiv},
-  year={2022},
-  volume = {abs/2205.09273},
-  doi = {10.48550/ARXIV.2205.09273},
-  lang={en},
-  review={no},
-  abbr={arXiv},
-  pdf={2022_arxiv_twist.pdf},
+  booktitle = "Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing (EMNLP)",
+  month = dec,
+  year = "2022",
+  address = "Abu Dhabi, UAE",
+  publisher = "Association for Computational Linguistics",
   project={https://github.com/jungokasai/twist_decoding},
+  url = "https://arxiv.org/abs/2205.09273",
   abstract={Natural language generation technology has recently seen remarkable progress with large-scale training, and many natural language applications are now built upon a wide range of generation models. Combining diverse models may lead to further progress, but conventional ensembling (e.g., shallow fusion) requires that they share vocabulary/tokenization schemes. We introduce Twist decoding, a simple and general inference algorithm that generates text while benefiting from diverse models. Our method does not assume the vocabulary, tokenization or even generation order is shared. Our extensive evaluations on machine translation and scientific paper summarization demonstrate that Twist decoding substantially outperforms each model decoded in isolation over various scenarios, including cases where domain-specific and general-purpose models are both available. Twist decoding also consistently outperforms the popular reranking heuristic where output candidates from one model is rescored by another. We hope that our work will encourage researchers and practitioners to examine generation models collectively, not just independently, and to seek out models with complementary strengths to the currently available models.},
-  cls={preprint},
+  lang={en},
+  abbr={EMNLP},
+  project={https://allenai.org/data/openpi},
+  pdf={2022_arxiv_twist.pdf},
+  cls={conf},
 }
 
 
