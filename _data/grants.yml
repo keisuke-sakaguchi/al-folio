@@ -1,0 +1,12 @@
+- name_jp: "現実世界の逐次的環境変化に協調的に適応するマルチモーダル自然言語理解モデル"
+  fund: "JSPS Fund for the Promotion of Joint International Research (Home-Returning Researcher Development Research) 21K21343"
+  fund_jp: "科研費　国際共同研究加速基金 (帰国発展研究)"
+  period: 02/2022–03/2025
+  budget: "57,070,000 JPY (Direct Cost: 43,900,000 JPY, Indirect Cost: 13,170,000, JPY)"
+
+- name_jp: "日本語大規模言語モデル学習の三点スケールアップとオープンソース化"
+  fund: "ABCI Grand Challenge” Program, National Institute of Advanced Industrial Science and Technology (AIST)"
+  fund_jp: "産総研「ABCIグランドチャレンジ」プログラム"
+  period: 05/2023
+  budget: NVIDIA V100 x 544 x 168 hours (= 91,392 GPU hours)
+

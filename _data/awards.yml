@@ -1,32 +1,38 @@
+- name_jp: NLP若手の会 奨励賞
+  date: 2023
+
+- name_jp: NLP若手の会 スポンサー (Helpfeel) 賞
+  date: 2023
+
 - name: "Best Paper Award at AACL-IJCNLP Student Research Workshop"
-  date: 2022
   name_jp: "Best Paper Award at AACL-IJCNLP Student Research Workshop"
+  date: 2022
 
 - name_jp: 言語処理学会年次大会　優秀賞
   date: 2022
   note: 2.3% (9/386)
 
 - name: AAAI Outstanding Paper (Single Best Paper) Award
+  name_jp: AAAI Outstanding Paper (Single Best Paper) Award
   date: 2020
   note: 0.1% (1/7737)
-  name_jp: AAAI Outstanding Paper (Single Best Paper) Award
 
 - name_jp: NLP若手の会 奨励賞
   date: 2019
 
 - name: ACL Outstanding Paper Award
+  name_jp: ACL Outstanding Paper Award
   date: 2017
   note: 1.5% (8/567)
-  name_jp: ACL Outstanding Paper Award
 
 - name_jp: 言語処理学会　論文賞
   date: 2017
   note: 12% (3/25)
 
 - name: NAIST Excellent Student Scholarship	
-  date: 2013
   name_jp: 奈良先端科学技術大学院大学優秀学生
+  date: 2013
 
 - name: "University of Essex: graduate with distinction in Psycho(&Neuro)linguistics"
-  date: 2006
   name_jp: "University of Essex: graduate with distinction in Psycho(&Neuro)linguistics"
+  date: 2006

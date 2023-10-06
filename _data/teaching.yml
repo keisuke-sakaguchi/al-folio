@@ -1,4 +1,26 @@
 - name: Natural Language Processing
+  name_jp: 自然言語処理
+  address: Tohoku University, Graduate School of Information Science
+  address_jp: 東北大学 大学院情報科学研究科
+  date: 2023 Fall 
+  date_jp: 2023 秋学期
+
+- name: Information and Data Literacy 
+  name_jp: 情報とデータの基礎
+  address: Tohoku University, Graduate School of Information Science
+  address_jp: 東北大学 工学部
+  date: 2023 Spring
+  date_jp: 2023 春学期
+
+- name: Introduction to Electrical, Information and Physics Engineering 
+  name_jp: 電気情報物理工学序説 
+  address: Tohoku University, School of Engineering
+  address_jp: 東北大学 工学部
+  date: 2023 Spring
+  date_jp: 2023 春学期
+
+- name: Natural Language Processing
+  name_jp: 自然言語処理
   address: Tohoku University, Graduate School of Information Science
   address_jp: 東北大学 大学院情報科学研究科
   date: 2022 Fall 

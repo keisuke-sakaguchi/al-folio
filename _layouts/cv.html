@@ -159,11 +159,10 @@
       <br/>
 
 
-
-
       <h4 class="cv"> Invited Talks </h4>
       <table class="cv" style="width: 100%;">
         {% for talk in site.data.talks %}
+          {% if talk.lang == "en" %}
           <tr>
           <td style="width: 1%" align="left"></td>
           <td style="width: 85%;" align="left">
@@ -179,9 +178,34 @@
             {{ talk.address }}
           </td>
           </tr>
+          {% endif %}
         {% endfor %}
       </table>
       <br/>
+
+
+      <h4 class="cv"> Teaching </h4>
+      <table class="cv" style="width: 100%;">
+        {% for teaching in site.data.teaching %}
+          <tr>
+          <td style="width: 1%" align="left"></td>
+          <td style="width: 85%;" align="left">
+            {{ teaching.name }}
+          </td>
+          <td style="width: 15%" align="right">
+            {{ teaching.date }}
+          </td>
+          </tr>
+          <tr>
+          <td style="width: 1%" align="left"></td>
+          <td class="position" style="width: 60%" align="left">
+            {{ teaching.address }}
+          </td>
+          </tr>
+        {% endfor %}
+      </table>
+      <br/>
+
 
 
       <h4 class="cv"> Publications </h4>

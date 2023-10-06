@@ -1,3 +1,40 @@
+- title_jp: '人間とAIの対話：ChatGPTがもたらす変革と課題'
+  address_jp: 第11回岡山大学AI研究会
+  date: 09/13/2023
+  lang: jp
+
+- title_jp: '人間とAIの対話:ChatGPTがもたらす変革と課題'
+  address_jp: 学術変革領域 A「尊厳学の確立:尊厳概念に基づく社会統合の学際的パラダイムの構築に向けて」 尊厳学フォーラム 第3回 B04 班シンポジウム「生成 AI と尊厳」  東京大学，東京
+  date: 09/10/2023
+  lang: jp
+
+- title: 'Twist Decoding: Diverse Generators Guide Each Other'
+  address: CWRU-TOHOKU Joint Workshop, Sendai, Japan
+  address_jp: ケースウェスタンリザーブ大学・東北大学 合同シンポジウム，仙台
+  date: 08/07/2023
+  lang: en
+
+- title_jp: 'ことばの不思議と人工知能'
+  address_jp: 河合塾 知の広場，仙台
+  date: 07/28/2023
+  lang: jp
+
+- title_jp: '人間とAIの対話: ChatGPTがもたらす変革と課題'
+  address_jp: 秋桜会, 仙台
+  date: 07/19/2023
+  lang: jp
+
+- title_jp: 'GPT4と大規模言語モデルおよびその応用'
+  address_jp: JTC オンラインセミナー
+  date: 07/07/2023
+  lang: jp
+
+- title: 'Large Language Models: What is happening now?'
+  address: Sungkyunkwan University, Republic of Korea (online)
+  address_jp: 成均館大学，韓国 (online)
+  date: 04/05/2023
+  lang: en
+
 - title: 'Large Language Models: What will happen next?'
   address: AIST AI Research Center, Japan
   address_jp: 産業技術総合研究所 人工知能研究センター，東京
@@ -5,9 +42,8 @@
   lang: jp
   note: https://www.airc.aist.go.jp/seminar_detail/seminar_063.html
 
-
 - title: 'Large Language Models: What will happen next?'
-  address: 2022 BrainLink X-Lab Day, Korean Federation of Science and Technology Societies (KOFST), South Korea
+  address: 2022 BrainLink X-Lab Day, Korean Federation of Science and Technology Societies (KOFST), Republic of Korea
   address_jp: 2022 BrainLink X-Lab Day, 韓国科学技術団体総連合会, 韓国
   date: 10/25/2022
   lang: en

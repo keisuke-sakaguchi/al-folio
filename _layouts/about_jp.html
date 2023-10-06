@@ -13,7 +13,7 @@ layout: default_jp
 
   <article>
     {% if page.profile %}
-    <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
+    <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}" style="text-align: center";>
       {% if page.profile.image %}
         {% responsive_image_block %}
           path: {{ page.profile.image | prepend: 'assets/img/' }}
