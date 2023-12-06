@@ -278,11 +278,10 @@
           {% bibliography -T bib_plain -f papers -q @*[lang=en && review=no && cls=workshop]* %}
       </div>
 
-      <h4 class="cv"> プレプリント </h4>
+      <h4 class="cv"> プレプリント（英語） </h4>
       <div class="publications-cv" style="width: 95%">
-          {% bibliography -T bib_plain -f papers -q @*[lang=en && cls=preprint]* %}
+          {% bibliography -T bib_plain -f papers -q @*[lang=en  && cls=preprint]* %}
       </div>
-
 
       <h4 class="cv"> 国内論文誌（査読あり） </h4>
       <div class="publications-cv" style="width: 95%">
@@ -293,6 +292,12 @@
       <div class="publications-cv" style="width: 95%">
           {% bibliography -T bib_plain -f papers_jp -q @*[lang=jp && review=no && cls=misc]* %}
       </div>
+
+      <h4 class="cv"> プレプリント(日本語)</h4>
+      <div class="publications-cv" style="width: 95%">
+          {% bibliography -T bib_plain -f papers_jp -q @*[lang=jp  && cls=preprint]* %}
+      </div>
+
 
     </div>
 
