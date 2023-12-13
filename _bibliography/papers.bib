@@ -1,5 +1,21 @@
 ---
 ---
+
+@inproceedings{kasai2023realtime,
+    title={RealTime {QA}: What's the Answer Right Now?},
+    author={Jungo Kasai and Keisuke Sakaguchi and yoichi takahashi and Ronan Le Bras and Akari Asai and Xinyan Velocity Yu and Dragomir Radev and Noah A. Smith and Yejin Choi and Kentaro Inui},
+    booktitle={Thirty-seventh Conference on Neural Information Processing Systems Datasets and Benchmarks Track},
+    year={2023},
+    url={https://openreview.net/forum?id=HfKOIPCvsv},
+    lang={en},
+    abbr={NeurIPS},
+    pdf={2023_neurips_realtimeqa.pdf},
+    project={https://realtimeqa.github.io/},
+  abstract={We introduce RealTime QA, a dynamic question answering (QA) platform that announces questions and evaluates systems on a regular basis (weekly in this version). RealTime QA inquires about the current world, and QA systems need to answer questions about novel events or information. It therefore challenges static, conventional assumptions in open domain QA datasets and pursues, instantaneous applications. We build strong baseline models upon large pretrained language models, including GPT-3 and T5. Our benchmark is an ongoing effort, and this preliminary report presents real-time evaluation results over the past month. Our experimental results show that GPT-3 can often properly update its generation results, based on newly-retrieved documents, highlighting the importance of up-to-date information retrieval. Nonetheless, we find that GPT-3 tends to return outdated answers when retrieved documents do not provide sufficient information to find an answer. This suggests an important avenue for future research: can an open domain QA system identify such unanswerable cases and communicate with the user or even the retrieval module to modify the retrieval results? We hope that RealTime QA will spur progress in instantaneous applications of question answering and beyond.},
+    cls={conf},
+}
+
+
 @techreport{choi_et_al_2023_j_bar_exam_en,
   author = {Choi, Jungmin and Kasai, Jungo and Sakaguchi, Keisuke},
   title = {{Evaluating GPT in Japanese Bar Examination: Insights and Limitations}},
@@ -18,7 +34,7 @@
             Heinzerling, Benjamin and
             Sakaguchi, Keisuke and
             Inui, Kentaro",
-    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2023 (to appear)",
+    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2023",
     month = dec,
     year = "2023",
     address = "Singapore",
@@ -26,22 +42,14 @@
     lang={en},
     abbr={EMNLP Findings},
     cls={conf},
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.findings-emnlp.236",
+    pdf={2023_emnlp-findings_tta.pdf}
+    pages = "3650--3661",
+    abstract = "Factual probing is a method that uses prompts to test if a language model {``}knows{''} certain world knowledge facts. A problem in factual probing is that small changes to the prompt can lead to large changes in model output. Previous work aimed to alleviate this problem by optimizing prompts via text mining or fine-tuning. However, such approaches are relation-specific and do not generalize to unseen relation types. Here, we propose to use test-time augmentation (TTA) as a relation-agnostic method for reducing sensitivity to prompt variations by automatically augmenting and ensembling prompts at test time. Experiments show improved model calibration, i.e., with TTA, model confidence better reflects prediction accuracy. Improvements in prediction accuracy are observed for some models, but for other models, TTA leads to degradation. Error analysis identifies the difficulty of producing high-quality prompt variations as the main challenge for TTA.",
+
 }
 
-
-@inproceedings{kasai2022realtimeqa,
-  title = {RealTime QA: What's the Answer Right Now?},
-  author = {Kasai, Jungo and Sakaguchi, Keisuke and Takahashi, Yoichi and Bras, Ronan Le and Asai, Akari and Yu, Xinyan and Radev, Dragomir and Smith, Noah A. and Choi, Yejin and Inui, Kentaro},
-  booktitle = "NeurIPS 2023 Datasets and Benchmarks Track",
-  month = dec,
-  year = "2023",
-  lang={en},
-  abbr={NeurIPS},
-  pdf={2022_arxiv_realtimeqa.pdf},
-  project={https://realtimeqa.github.io/},
-  abstract={We introduce RealTime QA, a dynamic question answering (QA) platform that announces questions and evaluates systems on a regular basis (weekly in this version). RealTime QA inquires about the current world, and QA systems need to answer questions about novel events or information. It therefore challenges static, conventional assumptions in open domain QA datasets and pursues, instantaneous applications. We build strong baseline models upon large pretrained language models, including GPT-3 and T5. Our benchmark is an ongoing effort, and this preliminary report presents real-time evaluation results over the past month. Our experimental results show that GPT-3 can often properly update its generation results, based on newly-retrieved documents, highlighting the importance of up-to-date information retrieval. Nonetheless, we find that GPT-3 tends to return outdated answers when retrieved documents do not provide sufficient information to find an answer. This suggests an important avenue for future research: can an open domain QA system identify such unanswerable cases and communicate with the user or even the retrieval module to modify the retrieval results? We hope that RealTime QA will spur progress in instantaneous applications of question answering and beyond.},
-  cls={conf},
-}
 
 
 @inproceedings{bhagavatula2023i2d2,
