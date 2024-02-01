@@ -1,10 +1,87 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Quality Survey</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .range-value {
+            margin-left: 10px;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-  Hello, World!
+    <div class="container py-5">
+        <h2 class="mb-4">Image Quality Survey</h2>
+        <form action="https://docs.google.com/forms/d/e/1FAIpQLSdT0FseDaR6px59C4qfylUXo9JK1MP8NUXzwG73osnLyqFrOw/formResponse">
+            <!-- Q1: Ask for name -->
+            <div class="mb-3">
+                <label for="userName" class="form-label">Your Name (option)</label>
+                <input type="text" class="form-control" id="userName" required>
+            </div>
+
+            <!-- Image comparisons Q2 to Q6 -->
+            <!-- Repeat this block for each pair of images, adjusting the question number and IDs as needed -->
+            <div class="image-comparison mb-5">
+                <h4 class="mb-3">Question 2</h4>
+                <div class="row">
+                    <div class="col">
+                        <img src="path_to_left_image.jpg" alt="Left Image" class="img-thumbnail"><br />
+                        <label>Quality (1-10):</label><span class="range-value" id="rangeValue1">1</span>
+                        <div class="mt-2 d-flex align-items-center">
+                            <input type="range" class="form-range" min="1" max="10" id="imageQuality1" name="entry.968824865">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <img src="path_to_right_image.jpg" alt="Right Image" class="img-thumbnail"><br />
+                        <label>Quality (1-10):</label><span class="range-value" id="rangeValue2">1</span>
+                        <div class="mt-2 d-flex align-items-center">
+                            <input type="range" class="form-range" min="1" max="10" id="imageQuality2" name="entry.1423979119">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End of repeated block -->
+
+            <!-- Comments and feedback -->
+            <div class="mb-3">
+                <label for="feedback" class="form-label">Comments and Feedback</label>
+                <textarea class="form-control" id="feedback" rows="3" name="entry.407015405"></textarea>
+            </div>
+
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+    <!-- JavaScript to display range value -->
+    <script>
+        // Function to update the range value display
+        function updateRangeValue(inputId, outputId) {
+            var input = document.getElementById(inputId);
+            var output = document.getElementById(outputId);
+            output.innerHTML = input.value; // Display the default slider value
+
+            // Update the current slider value (each time you drag the slider handle)
+            input.oninput = function() {
+                output.innerHTML = this.value;
+            }
+        }
+
+        // Initialize the display of range values
+        updateRangeValue("imageQuality1", "rangeValue1");
+        updateRangeValue("imageQuality2", "rangeValue2");
+        // Repeat the initialization for other sliders as necessary
+    </script>
+
+    <!-- Bootstrap JS and its dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
 </body>
 </html>
+
+
