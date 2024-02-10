@@ -22,6 +22,6 @@ My long-term research goals are
 2. to build embodied AI that is as robust and efficient as humans. 
 
 More specifically, my research interests include: robust NLP models for noisy texts (e.g., text normalization, parsing, automated grammatical error correction), 
-commonsense knowledge acquisition and reasoning, NLP for educational purposes (first and second language acquisition), text generation (decoding algorithms), efficient data collection, and reliable evaluation metric design (meta-evaluation).
+commonsense knowledge acquisition and reasoning, visual diagram understanding, NLP for educational purposes (first and second language acquisition), text generation (decoding algorithms), efficient data collection, and reliable evaluation metric design (meta-evaluation).
 
 
