@@ -102,11 +102,17 @@
 
       <div class="periodical">
       {% if entry.type == "article" %}
-        <em>{{entry.journal}}</em>
+        <em>{{entry.journal}}.</em>
       {% elsif entry.type == "inproceedings" %}
       <!--<em>In {{entry.booktitle}}</em>-->
-        <em>{{entry.booktitle}}</em>
+        <em>{{entry.booktitle}}.</em>
       {% endif %}
+
+      <!--- pages -->
+      {% if entry.pages %}
+          pp. {{entry.pages}},
+      {% endif %}
+
 
       {% if entry.lang == "jp" %}
         {% if entry.year %}
