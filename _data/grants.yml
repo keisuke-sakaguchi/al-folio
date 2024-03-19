@@ -4,6 +4,12 @@
   period: 02/2022–03/2025
   budget: "57,070,000 JPY (Direct Cost: 43,900,000 JPY, Indirect Cost: 13,170,000, JPY)"
 
+- name_jp: "英語大規模言語モデルの継続学習による日本語大規模モデルの構築"
+  fund: "ABCI Grand Challenge” Program, National Institute of Advanced Industrial Science and Technology (AIST)"
+  fund_jp: "産総研「ABCIグランドチャレンジ」プログラム"
+  period: 02/2024
+  budget: NVIDIA V100 x 544 x 168 hours (= 91,392 GPU hours)
+
 - name_jp: "日本語大規模言語モデル学習の三点スケールアップとオープンソース化"
   fund: "ABCI Grand Challenge” Program, National Institute of Advanced Industrial Science and Technology (AIST)"
   fund_jp: "産総研「ABCIグランドチャレンジ」プログラム"

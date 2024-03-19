@@ -1,11 +1,19 @@
-- name_jp: NLP若手の会 奨励賞
+- name_jp: 言語処理学会年次大会　優秀賞
+  date: 2024
+  note: 2.0% (12/599)
+
+- name_jp: 言語処理学会年次大会　スポンサー(博報堂テクノロジーズ)賞
+  date: 2024
+  note: 2.3% (14/599)
+
+- name_jp: (学生) NLP若手の会 奨励賞
   date: 2023
 
-- name_jp: NLP若手の会 スポンサー (Helpfeel) 賞
+- name_jp: (学生) NLP若手の会 スポンサー (Helpfeel) 賞
   date: 2023
 
-- name: "Best Paper Award at AACL-IJCNLP Student Research Workshop"
-  name_jp: "Best Paper Award at AACL-IJCNLP Student Research Workshop"
+- name: "(Student) Best Paper Award at AACL-IJCNLP Student Research Workshop"
+  name_jp: "(Student) Best Paper Award at AACL-IJCNLP Student Research Workshop"
   date: 2022
 
 - name_jp: 言語処理学会年次大会　優秀賞
@@ -17,7 +25,7 @@
   date: 2020
   note: 0.1% (1/7737)
 
-- name_jp: NLP若手の会 奨励賞
+- name_jp: (学生) NLP若手の会 奨励賞
   date: 2019
 
 - name: ACL Outstanding Paper Award
