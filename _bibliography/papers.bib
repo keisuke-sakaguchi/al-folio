@@ -1,19 +1,26 @@
 ---
 ---
 
-@ARTICLE{matsuzaki2024junimorph,
-  title={{J-UniMorph: Japanese Morphological Annotation through the Universal Feature Schema}},
-  author={Matsuzaki, Kosuke and Taniguchi, Masaya and Inui, Kentaro and Sakaguchi, Keisuke},
-  journal = {arXiv},
-  year = 2024,
-  doi = {10.48550/arXiv.2402.14411},
+
+@inproceedings{matsuzaki-etal-2024-j,
+    title = "{J}-{U}ni{M}orph: {J}apanese Morphological Annotation through the Universal Feature Schema",
+    author = "Matsuzaki, Kosuke  and
+      Taniguchi, Masaya  and
+      Inui, Kentaro  and
+      Sakaguchi, Keisuke",
+    booktitle = "Proceedings of the 21st SIGMORPHON workshop on Computational Research in Phonetics, Phonology, and Morphology",
+    month = jun,
+    year = "2024",
+    address = "Mexico City, Mexico",
+    publisher = "Association for Computational Linguistics",
+    pages = "7--19",
+    abstract = "We introduce a Japanese Morphology dataset, J-UniMorph, developed based on the UniMorph feature schema. This dataset addresses the unique and rich verb forms characteristic of the language{'}s agglutinative nature. J-UniMorph distinguishes itself from the existing Japanese subset of UniMorph, which is automatically extracted from Wiktionary. On average, the Wiktionary Edition features around 12 inflected forms for each word and is primarily dominated by denominal verbs (i.e., [noun] + suru (do-PRS)). Morphologically, this inflection pattern is same as the verb suru (do). In contrast, J-UniMorph explores a much broader and more frequently used range of verb forms, offering 118 inflected forms for each word on average. It includes honorifics, a range of politeness levels, and other linguistic nuances, emphasizing the distinctive characteristics of the Japanese language. This paper presents detailed statistics and characteristics of J-UniMorph, comparing it with the Wiktionary Edition. We will release J-UniMorph and its interactive visualizer publicly available, aiming to support cross-linguistic research and various applications.",
   lang={en},
-  review={no},
-  abbr={arXiv},
-  pdf={2024_arxiv_junimorph.pdf},
-  abstract={We introduce a Japanese Morphology dataset, J-UniMorph, developed based on the UniMorph feature schema. This dataset addresses the unique and rich verb forms characteristic of the language's agglutinative nature. J-UniMorph distinguishes itself from the existing Japanese subset of UniMorph, which is automatically extracted from Wiktionary. On average, the Wiktionary Edition features around 12 inflected forms for each word and is primarily dominated by denominal verbs (i.e., [noun] +suru (do-PRS)). Morphologically, this form is equivalent to the verb suru (do). In contrast, J-UniMorph explores a much broader and more frequently used range of verb forms, offering 118 inflected forms for each word on average. It includes honorifics, a range of politeness levels, and other linguistic nuances, emphasizing the distinctive characteristics of the Japanese language. This paper presents detailed statistics and characteristics of J-UniMorph, comparing it with the Wiktionary Edition. We release J-UniMorph and its interactive visualizer publicly available, aiming to support cross-linguistic research and various applications.},
-  cls={preprint},
+  review={yes},
+  abbr={MORPHON},
+  cls={workshop},
   project={https://github.com/cl-tohoku/J-UniMorph},
+  pdf={2024_sigmorphon_junimorph.pdf},
 }
 
 @inproceedings{kasai2024beam,
@@ -79,28 +86,23 @@
 
 @inproceedings{kamoda2023tta,
     title = "Test-time Augmentation for Factual Probing",
-    author = "Kamoda, Go and
-            Heinzerling, Benjamin and
-            Sakaguchi, Keisuke and
-            Inui, Kentaro",
+    author = "Kamoda, Go and Heinzerling, Benjamin and Sakaguchi, Keisuke and Inui, Kentaro",
     booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2023",
-    month = dec,
-    year = "2023",
+    month = "dec",
+    year = {2023},
     address = "Singapore",
     review={yes},
     publisher = "Association for Computational Linguistics",
     lang={en},
     abbr={EMNLP Findings},
     cls={conf},
-    publisher = "Association for Computational Linguistics",
     url = "https://aclanthology.org/2023.findings-emnlp.236",
+    doi={10.18653/v1/2023.findings-emnlp.236},
     pdf={2023_emnlp_tta.pdf},
     pages = "3650--3661",
     project={https://github.com/gokamoda/TTA4FactualProbing},
     abstract = "Factual probing is a method that uses prompts to test if a language model {``}knows{''} certain world knowledge facts. A problem in factual probing is that small changes to the prompt can lead to large changes in model output. Previous work aimed to alleviate this problem by optimizing prompts via text mining or fine-tuning. However, such approaches are relation-specific and do not generalize to unseen relation types. Here, we propose to use test-time augmentation (TTA) as a relation-agnostic method for reducing sensitivity to prompt variations by automatically augmenting and ensembling prompts at test time. Experiments show improved model calibration, i.e., with TTA, model confidence better reflects prediction accuracy. Improvements in prediction accuracy are observed for some models, but for other models, TTA leads to degradation. Error analysis identifies the difficulty of producing high-quality prompt variations as the main challenge for TTA.",
 }
-
-
 
 @inproceedings{bhagavatula2023i2d2,
   title={I2D2: Inductive Knowledge Distillation with NeuroLogic and Self-Imitation},
@@ -113,6 +115,7 @@
   abbr={ACL},
   address = "Toronto, Canada",
   publisher = "Association for Computational Linguistics",
+  doi={10.18653/v1/2023.acl-long.535},
   pdf={2023_acl_i2d2.pdf},
   pages={9614--9630},
   abstract={Commonsense capabilities of pre-trained language models dramatically improve with scale, leading many to believe that scale is the only winning recipe. But is it? Here, we investigate an alternative that a priori seems impossible: can smaller language models (e.g., GPT-2) win over models that are orders of magnitude larger and better (e.g., GPT-3), if powered with novel commonsense distillation algorithms?The key intellectual challenge is to design a learning algorithm that achieve a competitive level of commonsense acquisition, without relying on the benefits of scale. In particular, we study generative models of commonsense knowledge, focusing on the task of generating generics, statements of commonsense facts about everyday concepts, e.g., birds can fly.We introduce I2D2, a novel commonsense distillation framework that loosely follows the Symbolic Knowledge Distillation of West et al. but breaks the dependence on the extreme-scale teacher model with two innovations: (1) the novel adaptation of NeuroLogic Decoding to enhance the generation quality of the weak, off-the-shelf language models, and (2) self-imitation learning to iteratively learn from the model’s own enhanced commonsense acquisition capabilities. Empirical results suggest that scale is not the only way, as novel algorithms can be a promising alternative. Moreover, our study leads to a new corpus of generics, Gen-A-tomic, that is the largest and highest quality available to date.},
@@ -131,6 +134,7 @@
   address = "Toronto, Canada",
   publisher = "Association for Computational Linguistics",
   pdf={2023_acl_elqa.pdf},
+  doi={10.18653/v1/2023.acl-long.113},
   pages="2031--2047",
   project={https://github.com/shabnam-b/ELQA},
   abstract={We present ELQA, a corpus of questions and answers in and about the English language. Collected from two online forums, the >70k questions (from English learners and others) cover wide-ranging topics including grammar, meaning, fluency, and etymology. The answers include descriptions of general properties of English vocabulary and grammar as well as explanations about specific (correct and incorrect) usage examples. Unlike most NLP datasets, this corpus is metalinguistic—it consists of language about language. As such, it can facilitate investigations of the metalinguistic capabilities of NLU models, as well as educational applications in the language learning domain. To study this, we define a free-form question answering task on our dataset and conduct evaluations on multiple LLMs (Large Language Models) to analyze their capacity to generate metalinguistic answers.},
@@ -193,6 +197,7 @@
   address="Dubrovnik, Croatia",
   pages = "1351--1362",
   pdf={2023_eacl_skill_tree.pdf},
+  doi={10.18653/v1/2023.eacl-main.98},
   abstract = "Compositionality is a pivotal property of symbolic reasoning. However, how well recent neural models capture compositionality remains underexplored in the symbolic reasoning tasks. This study empirically addresses this question by systematically examining recently published pre-trained seq2seq models with a carefully controlled dataset of multi-hop arithmetic symbolic reasoning. We introduce a skill tree on compositionality in arithmetic symbolic reasoning that defines the hierarchical levels of complexity along with three compositionality dimensions: systematicity, productivity, and substitutivity. Our experiments revealed that among the three types of composition, the models struggled most with systematicity, performing poorly even with relatively simple compositions. That difficulty was not resolved even after training the models with intermediate reasoning steps.",
   cls={conf},
 }
@@ -205,6 +210,7 @@
   lang={en},
   abbr={EACL Findings},
   pdf={2023_eacl_strategy.pdf},
+  doi={10.18653/v1/2023.findings-eacl.86},
   review={yes},
   pages={1154--1162},
   month=may,
@@ -220,11 +226,10 @@
   title = {Twist Decoding: Diverse Generators Guide Each Other},
   author = {Kasai, Jungo and Sakaguchi, Keisuke and Bras, Ronan Le and Peng, Hao and Lu, Ximing and Radev, Dragomir and Choi, Yejin and Smith, Noah A.},
   booktitle = "Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing (EMNLP)",
-  month = dec,
-  year = "2022",
+  month = {dec},
+  year = {2022},
   address = "Abu Dhabi, UAE",
   publisher = "Association for Computational Linguistics",
-  project={https://github.com/jungokasai/twist_decoding},
   url = "https://aclanthology.org/2022.emnlp-main.326",
   abstract={Many language generation models are now available for a wide range of generation tasks, including machine translation and summarization. Combining such diverse models may lead to further progress, but ensembling generation models is challenging during inference: conventional ensembling methods (e.g., shallow fusion) require that the models share vocabulary/tokenization schemes. We introduce Twist decoding, a simple and general text generation algorithm that benefits from diverse models at inference time. Our method does not assume the vocabulary, tokenization or even generation order is shared. Our extensive evaluations on machine translation and scientific paper summarization demonstrate that Twist decoding substantially outperforms each model decoded in isolation over various scenarios, including cases where domain-specific and general-purpose models are both available. Twist decoding also consistently outperforms the popular reranking heuristic where output candidates from one model are rescored by another. We hope that our work will encourage researchers and practitioners to examine generation models collectively, not just independently, and to seek out models with complementary strengths to the currently available models.},
   lang={en},
@@ -254,7 +259,6 @@ Yet, Delphi is not perfect, exhibiting susceptibility to pervasive biases and in
   cls={preprint},
 }
 
-
 @article{mita2022tetra,
   title = {Towards Automated Document Revision: Grammatical Error Correction, Fluency Edits, and Beyond},
   author={Mita, Masato and Sakaguchi, Keisuke and Hagiwara, Masato and Mizumoto, Tomoya and Suzuki, Jun and Inui, Kentaro},
@@ -270,7 +274,6 @@ Yet, Delphi is not perfect, exhibiting susceptibility to pervasive biases and in
   abstract={Natural language processing technology has rapidly improved automated grammatical error correction tasks, and the community begins to explore document-level revision as one of the next challenges. To go beyond sentence-level automated grammatical error correction to NLP-based document-level revision assistant, there are two major obstacles: (1) there are few public corpora with document-level revisions being annotated by professional editors, and (2) it is not feasible to elicit all possible references and evaluate the quality of revision with such references because there are infinite possibilities of revision. This paper tackles these challenges. First, we introduce a new document-revision corpus, TETRA, where professional editors revised academic papers sampled from the ACL anthology which contain few trivial grammatical errors that enable us to focus more on document- and paragraph-level edits such as coherence and consistency. Second, we explore reference-less and interpretable methods for meta-evaluation that can detect quality improvements by document revision. We show the uniqueness of TETRA compared with existing document revision corpora and demonstrate that a fine-tuned pre-trained language model can discriminate the quality of documents after revision even when the difference is subtle. This promising result will encourage the community to further explore automated document revision models and metrics in future.},
   cls={preprint},
 }
-
 
 
 @inproceedings{Kasai2022BidimensionalLG,
@@ -290,7 +293,6 @@ Yet, Delphi is not perfect, exhibiting susceptibility to pervasive biases and in
   abstract={Natural language processing researchers have identified limitations of evaluation methodology for generation tasks, with new questions raised about the validity of automatic metrics and of crowdworker judgments. Meanwhile, efforts to improve generation models tend to focus on simple n-gram overlap metrics (e.g., BLEU, ROUGE). We argue that new advances on models and metrics should each more directly benefit and inform the other. We therefore propose a generalization of leaderboards, bidimensional leaderboards (BILLBOARDs), that simultaneously tracks progress in language generation tasks and metrics for their evaluation. Unlike conventional unidimensional leaderboards that sort submitted systems by predetermined metrics, a BILLBOARD accepts both generators and evaluation metrics as competing entries. A BILLBOARD automatically creates an ensemble metric that selects and linearly combines a few metrics based on a global analysis across generators. Further, metrics are ranked based on their correlations with human judgments. We release four BILLBOARDs for machine translation, summarization, and image captioning. We demonstrate that a linear ensemble of a few diverse metrics sometimes substantially outperforms existing metrics in isolation. Our mixed-effects model analysis shows that most automatic metrics, especially the reference-based ones, overrate machine over human generation, demonstrating the importance of updating metrics as generation models become stronger (and perhaps more similar to humans) in the future.},
   cls={conf},
 }
-
 
 @inproceedings{Kasai2022TransparentHE,
   title={Transparent Human Evaluation for Image Captioning},
@@ -368,7 +370,7 @@ Yet, Delphi is not perfect, exhibiting susceptibility to pervasive biases and in
       Choi, Yejin",
     booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2021",
     month = nov,
-    year = "2021",
+    year = 2021,
     address = "Punta Cana, Dominican Republic",
     publisher = "Association for Computational Linguistics",
     url = "https://aclanthology.org/2021.findings-emnlp.184",
@@ -409,12 +411,11 @@ pdf = {https://cacm.acm.org/magazines/2021/9/255048-winogrande/fulltext},
 
 @article{Hwang2021COMETATOMIC2O,
   title={COMET-ATOMIC 2020: On Symbolic and Neural Commonsense Knowledge Graphs},
-  author={Jena D. Hwang and Chandra Bhagavatula and Ronan Le Bras and Jeff Da and Keisuke Sakaguchi and Antoine Bosselut and Yejin Choi},
   journal={Proceedings of the AAAI Conference on Artificial Intelligence}, 
   author={Hwang, Jena D. and Bhagavatula, Chandra and Le Bras, Ronan and Da, Jeff and Sakaguchi, Keisuke and Bosselut, Antoine and Choi, Yejin}, 
   volume={35}, 
   number={7}, 
- year={2021},
+  year={2021},
   month={May}, 
   pages={6384--6392},
   lang={en},
@@ -427,8 +428,6 @@ With this new goal, we propose ATOMIC 2020, a new CSKG of general-purpose common
   cls={conf},
   review={yes},
 }
-
-
 
 @inproceedings{tandon-etal-2020-dataset,
     title = "A Dataset for Tracking Entities in Open Domain Procedural Text",
