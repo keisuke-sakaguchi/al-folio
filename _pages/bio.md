@@ -5,8 +5,4 @@ title: bio
 nav: true
 ---
 
-Keisuke Sakaguchi is an associate professor at Tohoku University NLP lab. 
-His research interests are in natural language processing, with a focus on commonsense knowledge acquisition and reasoning, designing robust algorithms for noisy texts, building reliable resource and evaluation framework, and NLP for educational applications. Keisuke received his Ph.D. from Johns Hopkins University, and worked as a research scientist at 
-Allen Institute for AI (AI2) before joining Tohoku University.
-His work has received the best paper award at AAAI 2020, and an outstanding paper award at ACL 2017.  
-
+Keisuke Sakaguchi is an associate professor in the NLP lab at Tohoku University. His research focuses on natural language processing, particularly in commonsense knowledge acquisition, reasoning, and robust text understanding. Recently, he has been working on multimodal models and the mechanistic interpretability of large language models (LLMs). Keisuke received his Ph.D. from Johns Hopkins University and was a research scientist at the Allen Institute for AI (AI2) before joining Tohoku University. His papers have received Outstanding Paper Awards at AAAI 2020 and ACL 2017.
