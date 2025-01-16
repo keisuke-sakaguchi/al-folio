@@ -17,4 +17,6 @@ group :jekyll_plugins do
     gem 'webrick'
     gem 'rmagick'
     gem 'faraday-retry'
+    gem 'csv'
+    gem 'observer'
 end

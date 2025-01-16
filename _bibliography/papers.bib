@@ -1,7 +1,98 @@
 ---
 ---
 
-@inproceedings{nozue-etal-2024-multimodal,
+@article{jiang2025delphi,
+  abstract = {As our society adopts increasingly powerful artificial intelligence (AI) systems for pervasive use, there are growing concerns about machine morality---or lack thereof. Millions of users already rely on the outputs of AI systems, such as chatbots, as decision aids. Meanwhile, AI researchers continue to grapple with the challenge of aligning these systems with human morality and values. In response to this challenge, we build and test Delphi, an open-source AI system trained to predict the moral judgements of US participants. The computational framework of Delphi is grounded in the framework proposed by the prominent moral philosopher John Rawls. Our results speak to the promises and limits of teaching machines about human morality. Delphi demonstrates improved generalization capabilities over those exhibited by off-the-shelf neural language models. At the same time, Delphi's failures also underscore important challenges in this arena. For instance, Delphi has limited cultural awareness and is susceptible to pervasive biases. Despite these shortcomings, we demonstrate several compelling use cases of Delphi, including its incorporation as a component within an ensemble of AI systems. Finally, we computationally demonstrate the potential of Rawls's prospect of hybrid approaches for reliable moral reasoning, inspiring future research in computational morality.},
+  author = {Jiang, Liwei and Hwang, Jena D. and Bhagavatula, Chandra and Bras, Ronan Le and Liang, Jenny T. and Levine, Sydney and Dodge, Jesse and Sakaguchi, Keisuke and Forbes, Maxwell and Hessel, Jack and Borchardt, Jon and Sorensen, Taylor and Gabriel, Saadia and Tsvetkov, Yulia and Etzioni, Oren and Sap, Maarten and Rini, Regina and Choi, Yejin},
+  date = {2025/01/13},
+  doi = {10.1038/s42256-024-00969-6},
+  pages = {2522-5839},
+  journal = {Nature Machine Intelligence},
+  title = {Investigating machine moral judgement through the Delphi experiment},
+  url = {https://doi.org/10.1038/s42256-024-00969-6},
+  year = {2025},
+  lang={en},
+  review={yes},
+  abbr={Nature MI},
+  cls={journal},
+  pdf={2025_naturemi_delphi.pdf},
+}
+
+@inproceedings{aoki2024heuristics,
+  title = "First Heuristic Then Rational: Dynamic Use of Heuristics in Language Model Reasoning",
+  author = "Aoki, Yoichi  and
+          Kudo, Keito  and
+          Kuribayashi, Tatsuki  and
+          Sone, Shusaku  and
+          Taniguchi, Masaya  and
+          Sakaguchi, Keisuke  and
+          Inui, Kentaro",
+  editor = "Al-Onaizan, Yaser  and
+          Bansal, Mohit  and
+          Chen, Yun-Nung",
+  booktitle = "Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing",
+  month = nov,
+  year = "2024",
+  address = "Miami, Florida, USA",
+  publisher = "Association for Computational Linguistics",
+  url = "https://aclanthology.org/2024.emnlp-main.789/",
+  doi = "10.18653/v1/2024.emnlp-main.789",
+  pages = "14255--14271",
+  abstract = {"Explicit multi-step reasoning, such as chain-of-thought, is widely adopted in the community to explore the better performance of language models (LMs). We report on the systematic strategy that LMs use in this process.Our controlled experiments reveal that LMs rely more heavily on heuristics, such as lexical overlap, in the earlier stages of reasoning when more steps are required to reach an answer. Conversely, their reliance on heuristics decreases as LMs progress closer to the final answer. This suggests that LMs track only a limited number of future steps and dynamically combine heuristic strategies with rational ones in solving tasks involving multi-step reasoning."},
+  lang={en},
+  review={yes},
+  abbr={EMNLP},
+  cls={conf},
+  pdf={2024_emnlp_heuristics.pdf},
+}
+
+
+@inproceedings{brassard2024acorn,
+  title={{ACORN}: Aspect-wise Commonsense Reasoning Explanation Evaluation},
+  author={Ana Brassard and Benjamin Heinzerling and Keito Kudo and Keisuke Sakaguchi and Kentaro Inui},
+  booktitle={First Conference on Language Modeling},
+  year={2024},
+  url={https://openreview.net/forum?id=2oHnsM9M9D},
+  abstract={Evaluating the quality of free-text explanations is a multifaceted, subjective, and labor-intensive task. Large language models (LLMs) present an appealing alternative due to their potential for consistency, scalability, and cost-efficiency. In this work, we present ACORN, a new dataset of 3,500 free-text explanations and aspect-wise quality ratings, and use it to evaluate how LLMs rate explanations. We observed that larger models outputted labels that maintained or increased the inter-annotator agreement, suggesting that they are within the expected variance between human raters. However, their correlation with majority-voted human ratings varied across different quality aspects, indicating that they are not a complete replacement. In turn, using LLMs as a supplement to a smaller group of human raters in some cases improved the correlation with the original majority labels. However, the effect was limited to cases where human raters were scarce, and an additional human rater had a more pronounced effect in all cases. Overall, we recommend against using LLMs as a complete replacement for human raters but encourage using them in configurations that end with targeted human involvement.},
+  lang={en},
+  review={yes},
+  abbr={COLM},
+  cls={conf},
+  pdf={2024_colm_acorn.pdf},
+}
+
+@ARTICLE{kudo2024think,
+  author = {{Kudo}, Keito and {Aoki}, Yoichi and {Kuribayashi}, Tatsuki and {Sone}, Shusaku and {Taniguchi}, Masaya and {Brassard}, Ana and {Sakaguchi}, Keisuke and {Inui}, Kentaro},
+  title = "{Think-to-Talk or Talk-to-Think? When LLMs Come Up with an Answer in Multi-Step Reasoning}",
+  journal = {arXiv},
+  year = 2024,
+  month = dec,
+  doi = {10.48550/arXiv.2412.01113},
+  lang = {en},
+  review = {no},
+  abbr = {arXiv},
+  pdf = {2024_arxiv_think.pdf},
+  abstract = {This study investigates the internal reasoning mechanism of language models during symbolic multi-step reasoning, motivated by the question of whether chain-of-thought (CoT) outputs are faithful to the model's internals. Specifically, we inspect when they internally determine their answers, particularly before or after CoT begins, to determine whether models follow a post-hoc "think-to-talk" mode or a step-by-step "talk-to-think" mode of explanation. Through causal probing experiments in controlled arithmetic reasoning tasks, we found systematic internal reasoning patterns across models; for example, simple subproblems are solved before CoT begins, and more complicated multi-hop calculations are performed during CoT.},
+  cls = {preprint},
+}
+
+@ARTICLE{lee2024crest,
+  author = {{Lee}, Jaehyeok and {Sakaguchi}, Keisuke and {Bak}, JinYeong},
+  title = "{Self-Training Meets Consistency: Improving LLMs' Reasoning With Consistency-Driven Rationale Evaluation}",
+  journal = {arXiv},
+  year = 2024,
+  month = nov,
+  doi = {10.48550/arXiv.2411.06387},
+  lang = {en},
+  review = {no},
+  abbr = {arXiv},
+  pdf = {2024_arxiv_crest.pdf},
+  abstract = {Self-training approach for large language models (LLMs) improves reasoning abilities by training the models on their self-generated rationales. Previous approaches have labeled rationales that produce correct answers for a given question as appropriate for training. However, a single measure risks misjudging rationale quality, leading the models to learn flawed reasoning patterns. To address this issue, we propose CREST (Consistency-driven Rationale Evaluation for Self-Training), a self-training framework that further evaluates each rationale through follow-up questions and leverages this evaluation to guide its training. Specifically, we introduce two methods: (1) filtering out rationales that frequently result in incorrect answers on follow-up questions and (2) preference learning based on mixed preferences from rationale evaluation results of both original and follow-up questions. Experiments on three question-answering datasets using open LLMs show that CREST not only improves the logical robustness and correctness of rationales but also improves reasoning abilities compared to previous self-training approaches.},
+  cls = {preprint},
+}
+
+
+@inproceedings{nozue2024multimodal,
     title = "A Multimodal Dialogue System to Lead Consensus Building with Emotion-Displaying",
     author = "Nozue, Shinnosuk and
       Nakano, Yuto and 
@@ -31,19 +122,66 @@
     pdf={2024_sigdial_multimodal.pdf},
 }
 
-@inproceedings{matsuzaki-etal-2024-j,
-    title = "{J}-{U}ni{M}orph: {J}apanese Morphological Annotation through the Universal Feature Schema",
-    author = "Matsuzaki, Kosuke  and
-      Taniguchi, Masaya  and
-      Inui, Kentaro  and
-      Sakaguchi, Keisuke",
-    booktitle = "Proceedings of the 21st SIGMORPHON workshop on Computational Research in Phonetics, Phonology, and Morphology",
-    month = jun,
-    year = "2024",
-    address = "Mexico City, Mexico",
-    publisher = "Association for Computational Linguistics",
-    pages = "7--19",
-    abstract = "We introduce a Japanese Morphology dataset, J-UniMorph, developed based on the UniMorph feature schema. This dataset addresses the unique and rich verb forms characteristic of the language{'}s agglutinative nature. J-UniMorph distinguishes itself from the existing Japanese subset of UniMorph, which is automatically extracted from Wiktionary. On average, the Wiktionary Edition features around 12 inflected forms for each word and is primarily dominated by denominal verbs (i.e., [noun] + suru (do-PRS)). Morphologically, this inflection pattern is same as the verb suru (do). In contrast, J-UniMorph explores a much broader and more frequently used range of verb forms, offering 118 inflected forms for each word on average. It includes honorifics, a range of politeness levels, and other linguistic nuances, emphasizing the distinctive characteristics of the Japanese language. This paper presents detailed statistics and characteristics of J-UniMorph, comparing it with the Wiktionary Edition. We will release J-UniMorph and its interactive visualizer publicly available, aiming to support cross-linguistic research and various applications.",
+@ARTICLE{kimura2024hijack,
+  author = {{Kimura}, Subaru and {Tanaka}, Ryota and {Miyawaki}, Shumpei and {Suzuki}, Jun and {Sakaguchi}, Keisuke},
+  title = "{Empirical Analysis of Large Vision-Language Models against Goal Hijacking via Visual Prompt Injection}",
+  journal = {arXiv},
+  year = 2024,
+  month = aug,
+  doi = {10.48550/arXiv.2408.03554},
+  lang = {en},
+  review = {no},
+  abbr = {arXiv},
+  pdf = {2024_arxiv_hijack.pdf},
+  abstract = {We explore visual prompt injection (VPI) that maliciously exploits the ability of large vision-language models (LVLMs) to follow instructions drawn onto the input image. We propose a new VPI method, "goal hijacking via visual prompt injection" (GHVPI), that swaps the execution task of LVLMs from an original task to an alternative task designated by an attacker. The quantitative analysis indicates that GPT-4V is vulnerable to the GHVPI and demonstrates a notable attack success rate of 15.8%, which is an unignorable security risk. Our analysis also shows that successful GHVPI requires high character recognition capability and instruction-following ability in LVLMs.},
+  cls = {preprint},
+}
+
+@ARTICLE{llmjp2024,
+  author = {{LLM-jp} and {:} and {Aizawa}, Akiko and {Aramaki}, Eiji and {Chen}, Bowen and {Cheng}, Fei and {Deguchi}, Hiroyuki and {Enomoto}, Rintaro and {Fujii}, Kazuki and {Fukumoto}, Kensuke and {Fukushima}, Takuya and {Han}, Namgi and {Harada}, Yuto and {Hashimoto}, Chikara and {Hiraoka}, Tatsuya and {Hisada}, Shohei and {Hosokawa}, Sosuke and {Jie}, Lu and {Kamata}, Keisuke and {Kanazawa}, Teruhito and {Kanezashi}, Hiroki and {Kataoka}, Hiroshi and {Katsumata}, Satoru and {Kawahara}, Daisuke and {Kawano}, Seiya and {Keyaki}, Atsushi and {Kiryu}, Keisuke and {Kiyomaru}, Hirokazu and {Kodama}, Takashi and {Kubo}, Takahiro and {Kuga}, Yohei and {Kumon}, Ryoma and {Kurita}, Shuhei and {Kurohashi}, Sadao and {Li}, Conglong and {Maekawa}, Taiki and {Matsuda}, Hiroshi and {Miyao}, Yusuke and {Mizuki}, Kentaro and {Mizuki}, Sakae and {Murawaki}, Yugo and {Mousterou}, Akim and {Nakamura}, Ryo and {Nakamura}, Taishi and {Nakayama}, Kouta and {Nakazato}, Tomoka and {Niitsuma}, Takuro and {Nishitoba}, Jiro and {Oda}, Yusuke and {Ogawa}, Hayato and {Okamoto}, Takumi and {Okazaki}, Naoaki and {Oseki}, Yohei and {Ozaki}, Shintaro and {Ryu}, Koki and {Rzepka}, Rafal and {Sakaguchi}, Keisuke and {Sasaki}, Shota and {Sekine}, Satoshi and {Suda}, Kohei and {Sugawara}, Saku and {Sugiura}, Issa and {Sugiyama}, Hiroaki and {Suzuki}, Hisami and {Suzuki}, Jun and {Suzumura}, Toyotaro and {Tachibana}, Kensuke and {Takagi}, Yu and {Takami}, Kyosuke and {Takeda}, Koichi and {Takeshita}, Masashi and {Tanaka}, Masahiro and {Taura}, Kenjiro and {Tolmachev}, Arseny and {Ueda}, Nobuhiro and {Wan}, Zhen and {Yada}, Shuntaro and {Yahata}, Sakiko and {Yamamoto}, Yuya and {Yamauchi}, Yusuke and {Yanaka}, Hitomi and {Yokota}, Rio and {Yoshino}, Koichiro},
+  title = "{LLM-jp: A Cross-organizational Project for the Research and Development of Fully Open Japanese LLMs}",
+  journal = {arXiv e-prints},
+  keywords = {Computer Science - Computation and Language, Computer Science - Artificial Intelligence},
+  year = 2024,
+  month = jul,
+  doi = {10.48550/arXiv.2407.03963},
+  lang = {en},
+  review = {no},
+  abbr = {arXiv},
+  pdf = {2024_arxiv_llmjp.pdf},
+  abstract = {This paper introduces LLM-jp, a cross-organizational project for the research and development of Japanese large language models (LLMs). LLM-jp aims to develop open-source and strong Japanese LLMs, and as of this writing, more than 1,500 participants from academia and industry are working together for this purpose. This paper presents the background of the establishment of LLM-jp, summaries of its activities, and technical reports on the LLMs developed by LLM-jp. For the latest activities, visit this https URL.},
+  cls = {preprint},
+}
+
+
+@ARTICLE{takahashi2024edit,
+  author = {{Takahashi}, Ryosuke and {Kamoda}, Go and {Heinzerling}, Benjamin and {Sakaguchi}, Keisuke and {Inui}, Kentaro},
+  title = "{The Curse of Popularity: Popular Entities have Catastrophic Side Effects when Deleting Knowledge from Language Models}",
+  journal = {arXiv},
+  year = 2024,
+  month = jun,
+  doi = {10.48550/arXiv.2406.06032},
+  lang = {en},
+  review = {no},
+  abbr = {arXiv},
+  pdf = {2024_arxiv_edit.pdf},
+  abstract = {Language models (LMs) encode world knowledge in their internal parameters through training. However, LMs may learn personal and confidential information from the training data, leading to privacy concerns such as data leakage. Therefore, research on knowledge deletion from LMs is essential. This study focuses on the knowledge stored in LMs and analyzes the relationship between the side effects of knowledge deletion and the entities related to the knowledge. Our findings reveal that deleting knowledge related to popular entities can have catastrophic side effects. Furthermore, this research is the first to analyze knowledge deletion in models trained on synthetic knowledge graphs, indicating a new direction for controlled experiments.},
+  cls = {preprint},
+}
+
+@inproceedings{matsuzaki2024junimorph,
+  title = "{J}-{U}ni{M}orph: {J}apanese Morphological Annotation through the Universal Feature Schema",
+  author = "Matsuzaki, Kosuke  and
+    Taniguchi, Masaya  and
+    Inui, Kentaro  and
+    Sakaguchi, Keisuke",
+  booktitle = "Proceedings of the 21st SIGMORPHON workshop on Computational Research in Phonetics, Phonology, and Morphology",
+  month = jun,
+  year = "2024",
+  address = "Mexico City, Mexico",
+  publisher = "Association for Computational Linguistics",
+  pages = "7--19",
+  abstract = "We introduce a Japanese Morphology dataset, J-UniMorph, developed based on the UniMorph feature schema. This dataset addresses the unique and rich verb forms characteristic of the language{'}s agglutinative nature. J-UniMorph distinguishes itself from the existing Japanese subset of UniMorph, which is automatically extracted from Wiktionary. On average, the Wiktionary Edition features around 12 inflected forms for each word and is primarily dominated by denominal verbs (i.e., [noun] + suru (do-PRS)). Morphologically, this inflection pattern is same as the verb suru (do). In contrast, J-UniMorph explores a much broader and more frequently used range of verb forms, offering 118 inflected forms for each word on average. It includes honorifics, a range of politeness levels, and other linguistic nuances, emphasizing the distinctive characteristics of the Japanese language. This paper presents detailed statistics and characteristics of J-UniMorph, comparing it with the Wiktionary Edition. We will release J-UniMorph and its interactive visualizer publicly available, aiming to support cross-linguistic research and various applications.",
   lang={en},
   review={yes},
   abbr={MORPHON},
