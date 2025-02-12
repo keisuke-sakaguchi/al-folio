@@ -4,12 +4,16 @@
 @article{jiang2025delphi,
   abstract = {As our society adopts increasingly powerful artificial intelligence (AI) systems for pervasive use, there are growing concerns about machine morality---or lack thereof. Millions of users already rely on the outputs of AI systems, such as chatbots, as decision aids. Meanwhile, AI researchers continue to grapple with the challenge of aligning these systems with human morality and values. In response to this challenge, we build and test Delphi, an open-source AI system trained to predict the moral judgements of US participants. The computational framework of Delphi is grounded in the framework proposed by the prominent moral philosopher John Rawls. Our results speak to the promises and limits of teaching machines about human morality. Delphi demonstrates improved generalization capabilities over those exhibited by off-the-shelf neural language models. At the same time, Delphi's failures also underscore important challenges in this arena. For instance, Delphi has limited cultural awareness and is susceptible to pervasive biases. Despite these shortcomings, we demonstrate several compelling use cases of Delphi, including its incorporation as a component within an ensemble of AI systems. Finally, we computationally demonstrate the potential of Rawls's prospect of hybrid approaches for reliable moral reasoning, inspiring future research in computational morality.},
   author = {Jiang, Liwei and Hwang, Jena D. and Bhagavatula, Chandra and Bras, Ronan Le and Liang, Jenny T. and Levine, Sydney and Dodge, Jesse and Sakaguchi, Keisuke and Forbes, Maxwell and Hessel, Jack and Borchardt, Jon and Sorensen, Taylor and Gabriel, Saadia and Tsvetkov, Yulia and Etzioni, Oren and Sap, Maarten and Rini, Regina and Choi, Yejin},
-  date = {2025/01/13},
+  date = {2025/01/01},
   doi = {10.1038/s42256-024-00969-6},
-  pages = {2522-5839},
+  id = {Jiang2025},
+  isbn = {2522-5839},
   journal = {Nature Machine Intelligence},
+  number = {1},
+  pages = {145--160},
   title = {Investigating machine moral judgement through the Delphi experiment},
   url = {https://doi.org/10.1038/s42256-024-00969-6},
+  volume = {7},
   year = {2025},
   lang={en},
   review={yes},
@@ -89,6 +93,28 @@
   pdf = {2024_arxiv_crest.pdf},
   abstract = {Self-training approach for large language models (LLMs) improves reasoning abilities by training the models on their self-generated rationales. Previous approaches have labeled rationales that produce correct answers for a given question as appropriate for training. However, a single measure risks misjudging rationale quality, leading the models to learn flawed reasoning patterns. To address this issue, we propose CREST (Consistency-driven Rationale Evaluation for Self-Training), a self-training framework that further evaluates each rationale through follow-up questions and leverages this evaluation to guide its training. Specifically, we introduce two methods: (1) filtering out rationales that frequently result in incorrect answers on follow-up questions and (2) preference learning based on mixed preferences from rationale evaluation results of both original and follow-up questions. Experiments on three question-answering datasets using open LLMs show that CREST not only improves the logical robustness and correctness of rationales but also improves reasoning abilities compared to previous self-training approaches.},
   cls = {preprint},
+}
+
+@inproceedings{mita2024tetra,
+  title = "Towards Automated Document Revision: Grammatical Error Correction, Fluency Edits, and Beyond",
+  author = "Mita, Masato  and
+    Sakaguchi, Keisuke  and
+    Hagiwara, Masato  and
+    Mizumoto, Tomoya  and
+    Suzuki, Jun  and
+    Inui, Kentaro",
+  booktitle = "Proceedings of the 19th Workshop on Innovative Use of NLP for Building Educational Applications (BEA 2024)",
+  month = jun,
+  year = 2024,
+  address = "Mexico City, Mexico",
+  publisher = "Association for Computational Linguistics",
+  pages = "251--265",
+  abstract = "Natural language processing (NLP) technology has rapidly improved automated grammatical error correction (GEC) tasks, and the GEC community has begun to explore document-level revision. However, there are two major obstacles to going beyond automated \textit{sentence-level} GEC to NLP-based document-level revision support: (1) there are few public corpora with document-level revisions annotated by professional editors, and (2) it is infeasible to obtain all possible references and evaluate revision quality using such references because there are infinite revision possibilities. To address these challenges, this paper proposes a new document revision corpus, Text Revision of ACL papers (TETRA), in which multiple professional editors have revised academic papers sampled from the ACL anthology. This corpus enables us to focus on document-level and paragraph-level edits, such as edits related to coherence and consistency. Additionally, as a case study using the TETRA corpus, we investigate reference-less and interpretable methods for meta-evaluation to detect quality improvements according to document revisions. We show the uniqueness of TETRA compared with existing document revision corpora and demonstrate that a fine-tuned pre-trained language model can discriminate the quality of documents after revision even when the difference is subtle.",
+  cls={workshop},
+  review={yes},
+  abbr={BEA},
+  pdf={2024_bea_tetra.pdf},
+  project={https://github.com/chemicaltree/tetra},
 }
 
 
@@ -423,22 +449,6 @@
   abstract={As AI systems become increasingly powerful and pervasive, there are growing concerns about machines' morality or a lack thereof. Yet, teaching morality to machines is a formidable task, as morality remains among the most intensely debated questions in humanity, let alone for AI. Existing AI systems deployed to millions of users, however, are already making decisions loaded with moral implications, which poses a seemingly impossible challenge: teaching machines moral sense, while humanity continues to grapple with it.
 To explore this challenge, we introduce Delphi, an experimental framework based on deep neural networks trained directly to reason about descriptive ethical judgments, e.g., "helping a friend" is generally good, while "helping a friend spread fake news" is not. Empirical results shed novel insights on the promises and limits of machine ethics; Delphi demonstrates strong generalization capabilities in the face of novel ethical situations, while off-the-shelf neural network models exhibit markedly poor judgment including unjust biases, confirming the need for explicitly teaching machines moral sense.
 Yet, Delphi is not perfect, exhibiting susceptibility to pervasive biases and inconsistencies. Despite that, we demonstrate positive use cases of imperfect Delphi, including using it as a component model within other imperfect AI systems. Importantly, we interpret the operationalization of Delphi in light of prominent ethical theories, which leads us to important future research questions.},
-  cls={preprint},
-}
-
-@article{mita2022tetra,
-  title = {Towards Automated Document Revision: Grammatical Error Correction, Fluency Edits, and Beyond},
-  author={Mita, Masato and Sakaguchi, Keisuke and Hagiwara, Masato and Mizumoto, Tomoya and Suzuki, Jun and Inui, Kentaro},
-  journal={arXiv},
-  year={2022},
-  volume = {abs/2205.11484},
-  doi = {10.48550/ARXIV.2205.11484},
-  lang={en},
-  review={no},
-  abbr={arXiv},
-  pdf={2022_arxiv_tetra.pdf},
-  project={https://github.com/chemicaltree/tetra},
-  abstract={Natural language processing technology has rapidly improved automated grammatical error correction tasks, and the community begins to explore document-level revision as one of the next challenges. To go beyond sentence-level automated grammatical error correction to NLP-based document-level revision assistant, there are two major obstacles: (1) there are few public corpora with document-level revisions being annotated by professional editors, and (2) it is not feasible to elicit all possible references and evaluate the quality of revision with such references because there are infinite possibilities of revision. This paper tackles these challenges. First, we introduce a new document-revision corpus, TETRA, where professional editors revised academic papers sampled from the ACL anthology which contain few trivial grammatical errors that enable us to focus more on document- and paragraph-level edits such as coherence and consistency. Second, we explore reference-less and interpretable methods for meta-evaluation that can detect quality improvements by document revision. We show the uniqueness of TETRA compared with existing document revision corpora and demonstrate that a fine-tuned pre-trained language model can discriminate the quality of documents after revision even when the difference is subtle. This promising result will encourage the community to further explore automated document revision models and metrics in future.},
   cls={preprint},
 }
 
