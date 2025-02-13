@@ -22,6 +22,37 @@
   pdf={2025_naturemi_delphi.pdf},
 }
 
+
+@article{kamoda2025detok,
+  title={Weight-based Analysis of Detokenization in Language Models: Understanding the First Stage of Inference Without Inference},
+  author={Go Kamoda and Benjamin Heinzerling and Tatsuro Inaba and Keito Kudo and Keisuke Sakaguchi and Kentaro Inui},
+  journal = {arXiv},
+  year={2025},
+  doi = {10.48550/arXiv.2501.15754},
+  lang = {en},
+  review = {no},
+  abbr = {arXiv},
+  pdf = {2025_arxiv_detok.pdf},
+  cls = {preprint},
+  abstract={According to the stages-of-inference hypothesis, early layers of language models map their subword-tokenized input, which does not necessarily correspond to a linguistically meaningful segmentation, to more meaningful representations that form the model's "inner vocabulary". Prior analysis of this detokenization stage has predominantly relied on probing and interventions such as path patching, which involve selecting particular inputs, choosing a subset of components that will be patched, and then observing changes in model behavior. Here, we show that several important aspects of the detokenization stage can be understood purely by analyzing model weights, without performing any model inference steps. Specifically, we introduce an analytical decomposition of first-layer attention in GPT-2. Our decomposition yields interpretable terms that quantify the relative contributions of position-related, token-related, and mixed effects. By focusing on terms in this decomposition, we discover weight-based explanations of attention bias toward close tokens and attention for detokenization.},
+}
+
+
+@article{kobayashi2025finch,
+  title={FinchGPT: a Transformer based language model for birdsong analysis}, 
+  author={Kosei Kobayashi and Kosuke Matsuzaki and Masaya Taniguchi and Keisuke Sakaguchi and Kentaro Inui and Kentaro Abe},
+  journal={arXiv},
+  year={2025},
+  doi={10.48550/arxiv.2502.00344},
+  lang = {en},
+  review = {no},
+  abbr = {arXiv},
+  pdf = {2025_arxiv_finch.pdf},
+  cls = {preprint},
+  abstract={The long-range dependencies among the tokens, which originate from hierarchical structures, are a defining hallmark of human language. However, whether similar dependencies exist within the sequential vocalization of non-human animals remains a topic of investigation. Transformer architectures, known for their ability to model long-range dependencies among tokens, provide a powerful tool for investigating this phenomenon. In this study, we employed the Transformer architecture to analyze the songs of Bengalese finch (Lonchura striata domestica), which are characterized by their highly variable and complex syllable sequences. To this end, we developed FinchGPT, a Transformer-based model trained on a textualized corpus of birdsongs, which outperformed other architecture models in this domain. Attention weight analysis revealed that FinchGPT effectively captures long-range dependencies within syllables sequences. Furthermore, reverse engineering approaches demonstrated the impact of computational and biological manipulations on its performance: restricting FinchGPT's attention span and disrupting birdsong syntax through the ablation of specific brain nuclei markedly influenced the model's outputs. Our study highlights the transformative potential of large language models (LLMs) in deciphering the complexities of animal vocalizations, offering a novel framework for exploring the structural properties of non-human communication systems while shedding light on the computational distinctions between biological brains and artificial neural networks.},
+}
+
+
 @inproceedings{aoki2024heuristics,
   title = "First Heuristic Then Rational: Dynamic Use of Heuristics in Language Model Reasoning",
   author = "Aoki, Yoichi  and

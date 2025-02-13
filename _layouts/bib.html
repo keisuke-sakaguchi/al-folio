@@ -117,20 +117,22 @@
                 {% if name_last_first %}
                   <em>{{author.last}} {{author.first}}</em>
                 {% else %}
-                  and <em>{{author.first}} {{author.last}}</em>
+                <!-- and <em>{{author.first}} {{author.last}}</em> -->
+                  <em>{{author.first}} {{author.last}}</em>
                 {% endif %}
 
 
               {% else %}
                 {% if coauthor_url %}
                 <!--and <a href="{{coauthor_url}}">{{author.last}}, {{author.first}}</a>-->
-                  and <a href="{{coauthor_url}}">{{author.first}} {{author.last}}</a>
+                  <a href="{{coauthor_url}}">{{author.first}} {{author.last}}</a>
                 {% else %}
                 <!--and {{author.last}}, {{author.first}}-->
                   {% if name_last_first %}
                     {{author.last}} {{author.first}}
                   {% else %}
-                    and {{author.first}} {{author.last}}
+                    {{author.first}} {{author.last}}
+                    <!-- and {{author.first}} {{author.last}} -->
                   {% endif %}
 
 
